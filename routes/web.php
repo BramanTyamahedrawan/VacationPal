@@ -17,7 +17,7 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('admin_views.home_admin');
 });
 
 //
