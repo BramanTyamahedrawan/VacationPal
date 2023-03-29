@@ -18,7 +18,7 @@ use App\Http\Controllers\SidebarController;
 */
 
 Route::get('/', function () {
-    return view('admin_views.home_admin');
+    return view('carousel');
 });
 
 Auth::routes();
