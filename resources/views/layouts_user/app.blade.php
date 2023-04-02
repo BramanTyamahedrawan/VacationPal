@@ -40,92 +40,32 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
-        <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
-            <div class="col-lg-6 px-5 text-start">
-                <small class=" link-light"><i class="fa fa-map-marker-alt text-secondary me-2"></i>Pantai 3 Warna
-                    Malang</small>
-                <small class="ms-4 dark link-light"><i class="fa fa-clock text-secondary me-2"></i>07.00 - 16.00</small>
-            </div>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="#" onclick="location.reload()" class="navbar-brand ms-4 ms-lg-0">
-                <h1 class="display-5 text-primary m-0">VacationPal</h1>
-            </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="#" onclick="location.reload()" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Services</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
-                <div class="d-none d-lg-flex ms-2">
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                        <small class="fab fa-facebook-f text-primary"></small>
-                    </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                        <small class="fab fa-twitter text-primary"></small>
-                    </a>
-                    <a class="btn btn-light btn-sm-square rounded-circle ms-3" href="">
-                        <small class="fab fa-linkedin-in text-primary"></small>
-                    </a>
-                </div>
-            </div>
-        </nav>
-    </div>
+    @include('layouts_user.navbar_user')
     <!-- Navbar End -->
-
 
     <!-- Carousel Start -->
     @yield('carousel')
     <!-- Carousel End -->
 
-
     <!-- About Start -->
     @yield('about')
     <!-- About End -->
 
+    <!-- Deskripsi Start -->
+    @yield('deskripsi')
+    <!-- Deskripsi End -->
+
     <!-- Features Start -->
-    @yield('features')
+    @yield('fitur')
     <!-- Features End -->
 
-
-    <!-- Service Start -->
-
-    <!-- Service End -->
-
-
-    <!-- Callback Start -->
-
-    <!-- Callback End -->
-
-
-    <!-- Projects Start -->
-
-    <!-- Projects End -->
-
-
-    <!-- Team Start -->
-
-    <!-- Team End -->
-
-
-    <!-- Testimonial Start -->
-
-    <!-- Testimonial End -->
-
-
     <!-- Footer Start -->
-
+    @include('layouts_user.footer_user')
     <!-- Footer End -->
 
 
     <!-- Copyright Start -->
-
+    @include('layouts_user.copyright')
     <!-- Copyright End -->
 
 
