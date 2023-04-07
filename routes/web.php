@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SidebarController;
+use App\Http\Controllers\PembayaranController;
 
 
 /*
@@ -28,3 +29,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/pesan_tiket', function () {
+    return view('pesan_tiket');
+})->name('pesan_tiket');
+
+Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembayaran');

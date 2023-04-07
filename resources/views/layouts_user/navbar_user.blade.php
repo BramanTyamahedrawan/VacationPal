@@ -16,7 +16,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="#" onclick="location.reload()" class="nav-item nav-link active">Home</a>
-                <a class="nav-link" href="/pesan-tiket">Pesan Tiket</a>
+                <a class="nav-link" href="{{ route('pesan_tiket') }}">Pesan Tiket</a>
                 <a class="nav-link" href="/transaksi">Transaksi</a>
                 <a class="nav-link" href="/tiket">Tiket</a>
                 <a href="/login" class="btn btn-lg">
