@@ -7,6 +7,8 @@ use App\Http\Controllers\SidebarController;
 use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\TiketController;
 use App\Http\Controllers\LunasController;
+use App\Http\Controllers\BayarDitempatController;
+use App\Http\Controllers\BatalController;
 
 
 /*
@@ -41,3 +43,7 @@ Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembaya
 Route::get('/tiket', [TiketController::class, 'index'])->name('tiket');
 
 Route::get('/lunas', [LunasController::class, 'index'])->name('lunas');
+
+Route::get('/bayar_ditempat', [BayarDitempatController::class, 'index'])->name('bayar_ditempat');
+
+Route::get('/batal', [BatalController::class, 'index'])->name('batal');
