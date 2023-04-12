@@ -17,7 +17,7 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <a href="#" onclick="location.reload()" class="nav-item nav-link active">Home</a>
                 <a class="nav-link" href="{{ route('pesan_tiket') }}">Pesan Tiket</a>
-                <a class="nav-link" href="/tiket">Tiket</a>
+                <a class="nav-link" href="{{ route('tiket') }}">Tiket</a>
                 <a href="/login" class="btn btn-lg">
                     <button type="button" class="btn btn-primary py-2 top-2 end-2 mt-2 me-2">Login</button>
                 </a>

@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SidebarController;
 use App\Http\Controllers\PembayaranController;
 use App\Http\Controllers\TiketController;
+use App\Http\Controllers\LunasController;
 
 
 /*
@@ -38,3 +39,5 @@ Route::get('/pesan_tiket', function () {
 Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembayaran');
 
 Route::get('/tiket', [TiketController::class, 'index'])->name('tiket');
+
+Route::get('/lunas', [LunasController::class, 'index'])->name('lunas');
