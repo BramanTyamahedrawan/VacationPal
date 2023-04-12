@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SidebarController;
 use App\Http\Controllers\PembayaranController;
+use App\Http\Controllers\TiketController;
 
 
 /*
@@ -35,3 +36,5 @@ Route::get('/pesan_tiket', function () {
 })->name('pesan_tiket');
 
 Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembayaran');
+
+Route::get('/tiket', [TiketController::class, 'index'])->name('tiket');

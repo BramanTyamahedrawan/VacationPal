@@ -1,6 +1,8 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-        <h3>VacationPal</h3>
+        <a class="nav-link" href="{{ route('home') }}">
+            <h2>VacationPal</h2>
+        </a>
     </div>
     <ul class="nav">
         <li class="nav-item nav-category">

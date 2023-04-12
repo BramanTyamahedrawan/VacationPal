@@ -5,11 +5,10 @@
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
         <!-- partial:partials/_navbar.html -->
-
+        @include('layouts_tiket.navbar')
         <!-- partial -->
         <div class="main-panel">
             {{-- dashboard --}}
-            @yield('content')
             <!-- content-wrapper ends -->
             <!-- partial:partials/_footer.html -->
             @include('layouts_admin.footer')
