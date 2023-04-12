@@ -27,7 +27,7 @@
                                 <td> L </td>
                                 <td> Bandung </td>
                                 <td> 08123456789 </td>
-                                <td><label class="badge badge-danger">Gagal</label></td>
+                                <td><label class="badge badge-danger">Batal</label></td>
                             </tr>
                             <tr>
                                 <td> 2 </td>
