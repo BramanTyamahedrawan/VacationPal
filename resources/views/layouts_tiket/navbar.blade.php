@@ -47,7 +47,7 @@
                     <a class="dropdown-item preview-item" href="{{ route('home') }}">
                         <div class="preview-thumbnail">
                             <div class="preview-icon bg-dark rounded-circle">
-                                <i class="mdi mdi-home text-success"></i>
+                                <i class="mdi mdi-home text-info"></i>
                             </div>
                         </div>
                         <div class="preview-item-content">

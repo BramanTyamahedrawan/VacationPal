@@ -25,11 +25,19 @@
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{ route('bayar_ditempat') }}">
                 <span class="menu-icon">
                     <i class="mdi mdi-table-large"></i>
                 </span>
                 <span class="menu-title">Bayar Ditempat</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('batal') }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-chart-bar"></i>
+                </span>
+                <span class="menu-title">Batal</span>
             </a>
         </li>
     </ul>
