@@ -21,13 +21,6 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td> 1 </td>
-                                <td> Herman Beck </td>
-                                <td> herman@gmail.com</td>
-                                <td> L </td>
-                                <td> Bandung </td>
-                                <td> 08123456789 </td>
-                                <td><label class="badge badge-danger">Batal</label></td>
                             </tr>
                         </tbody>
                     </table>

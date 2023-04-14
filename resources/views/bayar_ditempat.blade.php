@@ -29,15 +29,6 @@
                                 <td> 08123456789 </td>
                                 <td><label class="badge badge-warning">Bayar Ditempat</label></td>
                             </tr>
-                            <tr>
-                                <td> 5 </td>
-                                <td> Edward </td>
-                                <td> edward@gmail.com </td>
-                                <td> L </td>
-                                <td> Bandung </td>
-                                <td> 08123456789 </td>
-                                <td><label class="badge badge-warning">Bayar Ditempat</label></td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
