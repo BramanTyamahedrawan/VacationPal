@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Facade;
+use Illuminate\Support\Facades\Route;
+use App\Providers\FortifyServiceProvider;
+use Laravel\Fortify\Fortify;
 
 return [
 
@@ -185,6 +188,8 @@ return [
         /*
          * Package Service Providers...
          */
+        App\Providers\FortifyServiceProvider::class,
+
 
         /*
          * Application Service Providers...

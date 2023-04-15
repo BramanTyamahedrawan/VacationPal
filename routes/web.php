@@ -12,8 +12,9 @@ use App\Http\Controllers\HomeAdminController;
 use App\Http\Controllers\BayarDitempatAdminController;
 use App\Http\Controllers\LunasAdminController;
 use App\Http\Controllers\BatalAdminController;
-
-
+use Laravel\Fortify\Features;
+use Illuminate\Support\Facades\RateLimiter;
+use Laravel\Fortify\Fortify;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,11 +31,11 @@ Route::get('/', function () {
     return view('home');
 });
 
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

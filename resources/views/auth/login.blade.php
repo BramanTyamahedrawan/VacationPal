@@ -1,5 +1,7 @@
 @extends('layouts_auth.app_login')
 
+@section('title', 'Login')
+
 @section('login')
     <div class="container-scroller">
         <div class="container-fluid page-body-wrapper full-page-wrapper">
@@ -10,7 +12,6 @@
                             <h3 class="card-title text-left mb-3">{{ __('Login') }}</h3>
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
-
                                 <div class="form-group">
                                     <label>{{ __('Email Address or Username') }}</label>
                                     <input type="text" class="form-control p_input @error('email') is-invalid @enderror"
