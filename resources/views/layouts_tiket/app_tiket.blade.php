@@ -12,6 +12,10 @@
                 @yield('booking')
                 <!-- content-wrapper ends -->
                 <!-- partial:partials/_footer.html -->
+                @yield('lunas')
+
+                @yield('bayar_ditempat')
+                @yield('batal')
                 @include('layouts_admin.footer')
                 <!-- partial -->
             </div>

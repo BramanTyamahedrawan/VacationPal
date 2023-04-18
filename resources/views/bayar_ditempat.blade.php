@@ -1,6 +1,7 @@
-@extends('layouts_tiket.app_bayar_ditempat')
+@extends('layouts_tiket.app_tiket')
 
 @section('bayar_ditempat')
+    @parent
     <div class="col-lg-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">

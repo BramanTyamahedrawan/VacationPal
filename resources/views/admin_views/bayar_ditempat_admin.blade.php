@@ -1,6 +1,7 @@
-@extends('layouts_admin.app_bayar_ditempat_admin')
+@extends('layouts_admin.app')
 
 @section('content')
+    @parent
     <div class="content-wrapper">
         <div class="row">
             <div class="col-12 grid-margin stretch-card">
