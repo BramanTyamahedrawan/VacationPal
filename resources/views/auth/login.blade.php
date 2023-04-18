@@ -13,7 +13,7 @@
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
                                 <div class="form-group">
-                                    <label>{{ __('Email Address or Username') }}</label>
+                                    <label>{{ __('Email Address') }}</label>
                                     <input type="text" class="form-control p_input @error('email') is-invalid @enderror"
                                         name="email" value="{{ old('email') }}" required autocomplete="email">
                                     @error('email')

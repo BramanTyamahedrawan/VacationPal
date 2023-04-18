@@ -31,6 +31,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('user_template/css/style.css') }}" rel="stylesheet">
+
 </head>
 
 <body>

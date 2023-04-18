@@ -18,9 +18,18 @@
                 <a href="#" onclick="location.reload()" class="nav-item nav-link active">Home</a>
                 <a class="nav-link" href="{{ route('pesan_tiket') }}">Pesan Tiket</a>
                 <a class="nav-link" href="{{ route('tiket') }}">Tiket</a>
-                <a href="/login" class="btn btn-lg">
-                    <button type="button" class="btn btn-primary py-2 top-2 end-2 mt-2 me-2">Login</button>
-                </a>
+                @if (Auth::check())
+                    <a href="#" class="nav-link">
+                        <i class="fa fa-users text-info"></i> {{ Auth::user()->name }}
+                    </a>
+                @else
+                    <a href="{{ route('login') }}" class="btn btn-lg">
+                        <button type="button" class="btn btn-primary py-2 top-2 end-2 mt-2 me-2">
+                            Login
+                        </button>
+                    </a>
+                @endif
+
             </div>
         </div>
     </nav>

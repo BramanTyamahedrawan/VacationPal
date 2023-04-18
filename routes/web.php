@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\HomeController;
@@ -12,6 +13,7 @@ use App\Http\Controllers\HomeAdminController;
 use App\Http\Controllers\BayarDitempatAdminController;
 use App\Http\Controllers\LunasAdminController;
 use App\Http\Controllers\BatalAdminController;
+use App\Http\Controllers\PesanTiketController;
 use Laravel\Fortify\Features;
 use Illuminate\Support\Facades\RateLimiter;
 use Laravel\Fortify\Fortify;
@@ -39,9 +41,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/pesan_tiket', function () {
-    return view('pesan_tiket');
-})->name('pesan_tiket');
+Route::get('/pesan_tiket', [PesanTiketController::class, 'index'])->name('pesan_tiket')->middleware('auth');
 
 Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembayaran');
 
