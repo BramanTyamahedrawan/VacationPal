@@ -43,9 +43,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/pesan_tiket', [PesanTiketController::class, 'index'])->name('pesan_tiket')->middleware('auth');
 
-Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembayaran');
+Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembayaran')->middleware('auth');
 
-Route::get('/tiket', [TiketController::class, 'index'])->name('tiket');
+Route::get('/tiket', [TiketController::class, 'index'])->name('tiket')->middleware('auth');
 
 Route::get('/lunas', [LunasController::class, 'index'])->name('lunas');
 
