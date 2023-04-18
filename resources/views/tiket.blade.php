@@ -1,5 +1,7 @@
 @extends('layouts_tiket.app_tiket')
 
+@section('title', 'Tiketku')
+
 @section('booking')
     <div class="col-lg-12 grid-margin stretch-card">
         <div class="card">

@@ -5,7 +5,7 @@
                 <a class="nav-link" id="profileDropdown" href="{{ route('home') }}" data-toggle="dropdown">
                     <div class="navbar-profile">
                         <p class="mb-0 d-none d-sm-block navbar-profile-name">
-                        <h4>Daftar Tiket</h4>
+                        <h4>MyTiket</h4>
                         </p>
                     </div>
                 </a>
