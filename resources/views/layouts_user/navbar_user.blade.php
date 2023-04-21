@@ -19,9 +19,28 @@
                 <a class="nav-link" href="{{ route('pesan_tiket') }}">Pesan Tiket</a>
                 <a class="nav-link" href="{{ route('tiket') }}">Tiket</a>
                 @if (Auth::check())
-                    <a href="#" class="nav-link">
-                        <i class="fa fa-users text-info"></i> {{ Auth::user()->name }}
-                    </a>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">
+                            <i class="fa fa-users text-info"></i> {{ Auth::user()->name }}
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                            aria-labelledby="profileDropdown">
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-item-content">
+                                    <p class="preview-subject mb-1">Settings</p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item preview-item"
+                                onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
+                                <div class="preview-item-content">
+                                    <p class="preview-subject mb-1">Log out</p>
+                                </div>
+                            </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                @csrf</form>
+                        </div>
+                    </li>
                 @else
                     <a href="{{ route('login') }}" class="btn btn-lg">
                         <button type="button" class="btn btn-primary py-2 top-2 end-2 mt-2 me-2">
@@ -29,7 +48,6 @@
                         </button>
                     </a>
                 @endif
-
             </div>
         </div>
     </nav>
