@@ -15,10 +15,10 @@
                                 @csrf
                                 <div class="form-group">
                                     <label>Username</label>
-                                    <input id="name" type="text"
-                                        class="form-control p_input @error('name') is-invalid @enderror" name="name"
-                                        value="{{ old('name') }}" required autocomplete="name" autofocus>
-                                    @error('name')
+                                    <input id="username" type="text"
+                                        class="form-control p_input @error('username') is-invalid @enderror" name="username"
+                                        value="{{ old('username') }}" required autocomplete="username" autofocus>
+                                    @error('username')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
                                         </span>
@@ -61,12 +61,6 @@
                                 <div class="text-center">
                                     <button type="submit"
                                         class="btn btn-primary btn-block enter-btn">{{ __('Register') }}</button>
-                                </div>
-                                <div class="d-flex">
-                                    <button class="btn btn-facebook col mr-2">
-                                        <i class="mdi mdi-facebook"></i> Facebook </button>
-                                    <button class="btn btn-google col">
-                                        <i class="mdi mdi-google-plus"></i> Google plus </button>
                                 </div>
                                 <p class="sign-up text-center">Already have an Account?<a href="{{ route('login') }}"> Sign
                                         In</a></p>

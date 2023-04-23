@@ -53,14 +53,6 @@
                                     <button type="submit"
                                         class="btn btn-primary btn-block enter-btn">{{ __('Login') }}</button>
                                 </div>
-
-                                <div class="d-flex">
-                                    <button class="btn btn-facebook mr-2 col">
-                                        <i class="mdi mdi-facebook"></i> Facebook </button>
-                                    <button class="btn btn-google col">
-                                        <i class="mdi mdi-google-plus"></i> Google plus </button>
-                                </div>
-
                                 <p class="sign-up">{{ __("Don't have an Account?") }} <a
                                         href="{{ route('register') }}">{{ __('Sign Up') }}</a></p>
                             </form>
