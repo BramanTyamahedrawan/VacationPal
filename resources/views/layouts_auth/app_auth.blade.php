@@ -1,4 +1,5 @@
 @include('layouts_auth.head')
 @yield('login')
 @yield('register')
+@yield('verify')
 @include('layouts_auth.tail')

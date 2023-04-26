@@ -14,6 +14,9 @@ use App\Http\Controllers\BayarDitempatAdminController;
 use App\Http\Controllers\LunasAdminController;
 use App\Http\Controllers\BatalAdminController;
 use App\Http\Controllers\PesanTiketController;
+use App\Http\Controllers\RegisterController;
+use Laravel\Fortify\Http\Controllers\RegisteredUserController;
+use Illuminate\Auth\Events\Registered;
 use Laravel\Fortify\Features;
 use Illuminate\Support\Facades\RateLimiter;
 use Laravel\Fortify\Fortify;
@@ -33,19 +36,29 @@ Route::get('/', function () {
     return view('home');
 });
 
+
+
+// Auth::routes();
 // Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Auth::routes();
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembayaran');
+    Route::get('/pesan_tiket', [PesanTiketController::class, 'index'])->name('pesan_tiket');
+    Route::get('/tiket', [TiketController::class, 'index'])->name('tiket');
+});
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::middleware(['guest'])->group(function () {
+    Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
+    Route::post('/register', [RegisteredUserController::class, 'store'])->name('register.store');
+});
 
-Route::get('/pesan_tiket', [PesanTiketController::class, 'index'])->name('pesan_tiket')->middleware('auth');
-
-Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembayaran')->middleware('auth');
-
-Route::get('/tiket', [TiketController::class, 'index'])->name('tiket')->middleware('auth');
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/home', function () {
+        return view('home');
+    })->name('home');
+});
 
 Route::get('/lunas', [LunasController::class, 'index'])->name('lunas');
 
