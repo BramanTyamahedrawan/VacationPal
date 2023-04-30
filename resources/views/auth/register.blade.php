@@ -17,7 +17,8 @@
                                     <label>Name</label>
                                     <input id="name" type="text"
                                         class="form-control p_input @error('name') is-invalid @enderror" name="name"
-                                        value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                        value="{{ old('name') }}" required autocomplete="name" autofocus
+                                        placeholder="Masukkan Nama Anda">
                                     @error('name')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -28,7 +29,8 @@
                                     <label>Email</label>
                                     <input id="email" type="email"
                                         class="form-control p_input @error('email') is-invalid @enderror" name="email"
-                                        value="{{ old('email') }}" required autocomplete="email">
+                                        value="{{ old('email') }}" required autocomplete="email"
+                                        placeholder="Masukkan Email Anda">
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -39,7 +41,7 @@
                                     <label>Password</label>
                                     <input id="password" type="password"
                                         class="form-control p_input @error('password') is-invalid @enderror" name="password"
-                                        required autocomplete="new-password">
+                                        required autocomplete="new-password" placeholder="Password">
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -49,23 +51,21 @@
                                 <div class="form-group">
                                     <label>Confirm Password</label>
                                     <input id="password-confirm" type="password" class="form-control p_input"
-                                        name="password_confirmation" required autocomplete="new-password">
+                                        name="password_confirmation" required autocomplete="new-password"
+                                        placeholder="Password">
                                 </div>
                                 <div class="form-group d-flex align-items-center justify-content-between">
                                     <div class="form-check">
                                         <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input"> Remember me </label>
+                                            <input type="checkbox" class="form-check-input"> Ingat Saya </label>
                                     </div>
-                                    <a href="#" class="forgot-pass">Forgot password</a>
                                 </div>
                                 <div class="text-center">
                                     <button type="submit"
                                         class="btn btn-primary btn-block enter-btn">{{ __('Register') }}</button>
                                 </div>
-                                <p class="sign-up text-center">Already have an Account?<a href="{{ route('login') }}"> Sign
+                                <p class="sign-up text-center">Jika Sudah Punya Akun? <a href="{{ route('login') }}"> Sign
                                         In</a></p>
-                                <p class="terms">By creating an account you are accepting our<a href="#"> Terms &
-                                        Conditions</a></p>
                             </form>
                         </div>
                     </div>

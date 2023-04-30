@@ -1,6 +1,6 @@
 @extends('layouts_auth.app_auth')
 
-@section('title', 'Forgot Password')
+@section('title', 'Lupa Password')
 
 @section('forgot')
     @parent
@@ -11,7 +11,7 @@
                     <div class="card col-lg-6 mx-auto">
                         <div class="card-body">
                             <div class="card-header text-lg-center">
-                                <h3>Forgot Password</h3>
+                                <h3>Lupa Password</h3>
                             </div>
 
                             <div class="card-body">
@@ -32,7 +32,8 @@
                                         <div class="col-md-6">
                                             <input id="email" type="email"
                                                 class="form-control @error('email') is-invalid @enderror" name="email"
-                                                value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                                value="{{ old('email') }}" required autocomplete="email"
+                                                placeholder="Masukkan Email Anda" autofocus>
 
                                             @error('email')
                                                 <span class="invalid-feedback" role="alert">
@@ -45,7 +46,7 @@
                                     <div class="row mb-0">
                                         <div class="col-md-6 offset-md-4">
                                             <button type="submit"
-                                                class="btn btn-primary
+                                                class="btn btn-inverse-success
                                             btn-icon-text p-6">
                                                 <i
                                                     class="mdi

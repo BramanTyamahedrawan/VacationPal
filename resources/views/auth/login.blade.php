@@ -15,7 +15,8 @@
                                 <div class="form-group">
                                     <label>{{ __('Email Address') }}</label>
                                     <input type="text" class="form-control p_input @error('email') is-invalid @enderror"
-                                        name="email" value="{{ old('email') }}" required autocomplete="email">
+                                        name="email" value="{{ old('email') }}" required autocomplete="email"
+                                        placeholder="Email Anda">
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -27,7 +28,7 @@
                                     <label>{{ __('Password') }}</label>
                                     <input type="password"
                                         class="form-control p_input @error('password') is-invalid @enderror" name="password"
-                                        required autocomplete="current-password">
+                                        required autocomplete="current-password" placeholder="Password">
                                     @error('password')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -45,15 +46,15 @@
                                     </div>
                                     @if (Route::has('password.request'))
                                         <a href="{{ route('password.request') }}"
-                                            class="forgot-pass">{{ __('Forgot Your Password?') }}</a>
+                                            class="forgot-pass">{{ __('Lupa Password') }}</a>
                                     @endif
                                 </div>
 
                                 <div class="text-center">
                                     <button type="submit"
-                                        class="btn btn-primary btn-block enter-btn">{{ __('Login') }}</button>
+                                        class="btn btn-primary btn-block enter-btn">{{ __('Sign In') }}</button>
                                 </div>
-                                <p class="sign-up">{{ __("Don't have an Account?") }} <a
+                                <p class="sign-up">{{ __('Belum Punya Akun?') }} <a
                                         href="{{ route('register') }}">{{ __('Sign Up') }}</a></p>
                             </form>
                         </div>
