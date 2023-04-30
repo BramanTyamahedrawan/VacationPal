@@ -2,4 +2,6 @@
 @yield('login')
 @yield('register')
 @yield('verify')
+@yield('forgot')
+@yield('reset_password')
 @include('layouts_auth.tail')

@@ -14,6 +14,7 @@ use App\Http\Controllers\BayarDitempatAdminController;
 use App\Http\Controllers\LunasAdminController;
 use App\Http\Controllers\BatalAdminController;
 use App\Http\Controllers\PesanTiketController;
+use App\Http\Controllers\RequestController;
 use App\Http\Controllers\RegisterController;
 use Laravel\Fortify\Http\Controllers\RegisteredUserController;
 use Illuminate\Auth\Events\Registered;
@@ -43,12 +44,6 @@ Route::get('/', function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembayaran');
-    Route::get('/pesan_tiket', [PesanTiketController::class, 'index'])->name('pesan_tiket');
-    Route::get('/tiket', [TiketController::class, 'index'])->name('tiket');
-});
-
 Route::middleware(['guest'])->group(function () {
     Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
     Route::post('/register', [RegisteredUserController::class, 'store'])->name('register.store');
@@ -59,6 +54,13 @@ Route::middleware(['auth', 'verified'])->group(function () {
         return view('home');
     })->name('home');
 });
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/pesan_tiket', [PesanTiketController::class, 'index'])->name('pesan_tiket');
+    Route::get('/tiket', [TiketController::class, 'index'])->name('tiket');
+    Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembayaran');
+});
+
 
 Route::get('/lunas', [LunasController::class, 'index'])->name('lunas');
 
@@ -73,3 +75,7 @@ Route::get('/bayar_ditempat_admin', [BayarDitempatAdminController::class, 'index
 Route::get('/lunas_admin', [LunasAdminController::class, 'index'])->name('lunas_admin');
 
 Route::get('/batal_admin', [BatalAdminController::class, 'index'])->name('batal_admin');
+
+Route::get('/forgot-password', function () {
+    return view('auth.passwords.email');
+})->name('password.request');
