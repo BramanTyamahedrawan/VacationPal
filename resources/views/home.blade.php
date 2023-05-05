@@ -122,7 +122,7 @@
                         pelanggan dalam melakukan pemesanan tiket secara online, sehingga pelanggan tidak
                         perlu lagi antri di loket tiket atau menghubungi call center
                     </p>
-                    <a class="btn btn-primary py-3 px-5" href="">Pesan Tiket</a>
+                    <a class="btn btn-primary py-3 px-5" href="{{ route('pesan_tiket') }}">Pesan Tiket</a>
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-4 align-items-center">
@@ -193,7 +193,7 @@
                             <div class="row g-4">
                                 <div class="col-md-6">
                                     <h3 class="mb-4">Pemesanan Tiket</h3>
-                                    <p class="mb-4">fitur ini memungkinkan pengguna untuk memilih tipe tiket,
+                                    <p class="mb-4">Fitur ini memungkinkan pengguna untuk memilih tipe tiket,
                                         jumlah tiket yang ingin dibeli, serta tanggal dan waktu kunjungan ke pantai 3
                                         warna.</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Terpercaya</p>
@@ -206,7 +206,7 @@
                             <div class="row g-4">
                                 <div class="col-md-6">
                                     <h3 class="mb-4">Pembatalan Tiket</h3>
-                                    <p class="mb-4">fitur ini memungkinkan pengguna untuk membatalkan
+                                    <p class="mb-4">Fitur ini memungkinkan pengguna untuk membatalkan
                                         pemesanan tiket yang telah dilakukan sebelum batas waktu yang ditentukan.
                                         Pengguna akan menerima pengembalian dana sesuai dengan kebijakan
                                         pembatalan yang berlaku</p>
@@ -220,7 +220,7 @@
                             <div class="row g-4">
                                 <div class="col-md-6">
                                     <h3 class="mb-4">Pembayaran</h3>
-                                    <p class="mb-4">fitur ini memungkinkan pengguna untuk melakukan pembayaran
+                                    <p class="mb-4">Fitur ini memungkinkan pengguna untuk melakukan pembayaran
                                         atas pemesanan tiket yang telah dipilih. Sistem akan mengarahkan pengguna ke
                                         halaman pembayaran yang sesuai dengan metode pembayaran yang dipilih oleh
                                         pengguna.</p>
