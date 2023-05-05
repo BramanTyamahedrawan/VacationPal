@@ -81,6 +81,13 @@
                                     merupakan sisi yang paling dalam, hijau pada sisi yang dangkal serta coklat merupakan
                                     pada pasir
                                     pantai</p>
+                                <p class="mb-0">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5744.901536727792!2d112.67663673296389!3d-8.439488875114831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd601147042ed43%3A0x3d8b26de55357956!2sPantai%20Tiga%20Warna!5e0!3m2!1sid!2sid!4v1683266958659!5m2!1sid!2sid"
+                                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </p>
                             </div>
                             <div class="tab-pane fade show active" id="nav-story" role="tabpanel"
                                 aria-labelledby="nav-story-tab">
