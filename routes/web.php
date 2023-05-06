@@ -33,16 +33,10 @@ use Laravel\Fortify\Fortify;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-
-
 // Auth::routes();
 // Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::middleware(['guest'])->group(function () {
     Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
@@ -50,32 +44,21 @@ Route::middleware(['guest'])->group(function () {
 });
 
 Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('/home', function () {
-        return view('home');
-    })->name('home');
+    Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/home_admin', [HomeAdminController::class, 'index'])->name('home_admin');
 });
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/pesan_tiket', [PesanTiketController::class, 'index'])->name('pesan_tiket');
     Route::get('/tiket', [TiketController::class, 'index'])->name('tiket');
     Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembayaran');
+    Route::get('/lunas', [LunasController::class, 'index'])->name('lunas');
+    Route::get('/bayar_ditempat', [BayarDitempatController::class, 'index'])->name('bayar_ditempat');
+    Route::get('/batal', [BatalController::class, 'index'])->name('batal');
+    Route::get('/bayar_ditempat_admin', [BayarDitempatAdminController::class, 'index'])->name('bayar_ditempat_admin');
+    Route::get('/lunas_admin', [LunasAdminController::class, 'index'])->name('lunas_admin');
+    Route::get('/batal_admin', [BatalAdminController::class, 'index'])->name('batal_admin');
+    Route::get('/forgot-password', function () {
+        return view('auth.passwords.email');
+    })->name('password.request');
 });
-
-
-Route::get('/lunas', [LunasController::class, 'index'])->name('lunas');
-
-Route::get('/bayar_ditempat', [BayarDitempatController::class, 'index'])->name('bayar_ditempat');
-
-Route::get('/batal', [BatalController::class, 'index'])->name('batal');
-
-Route::get('/home_admin', [HomeAdminController::class, 'index'])->name('home_admin');
-
-Route::get('/bayar_ditempat_admin', [BayarDitempatAdminController::class, 'index'])->name('bayar_ditempat_admin');
-
-Route::get('/lunas_admin', [LunasAdminController::class, 'index'])->name('lunas_admin');
-
-Route::get('/batal_admin', [BatalAdminController::class, 'index'])->name('batal_admin');
-
-Route::get('/forgot-password', function () {
-    return view('auth.passwords.email');
-})->name('password.request');
