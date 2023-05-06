@@ -52,7 +52,8 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Tentang kami</p>
                     <h1 class="display-5 mb-4">Pantai 3 Warna Malang</h1>
-                    <p class="mb-4">Kabupaten Malang memiliki aneka tempat wisata yang beragam mulai dari pegunungan
+                    <p class="mb-4">
+                        Kabupaten Malang memiliki aneka tempat wisata yang beragam mulai dari pegunungan
                         hingga wisata pantai. Salah satu wisata pantai di Malang yang banyak dikunjungi wisatawan adalah
                         Pantai 3 Warna.
                     </p>
@@ -72,36 +73,42 @@
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade" id="nav-mission" role="tabpanel" aria-labelledby="nav-mission-tab">
-                                <p>Pantai Tiga Warna terletak di Kecamatan Sumber Manjing Wetan, Kabupaten Malang, Jawa
-                                    Timur. Pantai ini memiliki gradasi yang terdiri dari tiga warna, yaitu biru, hijau, dan
-                                    coklat
-                                    kemerahan. </p>
-                                <p class="mb-0">Warna air laut yang berbeda-beda tersebut disebabkan oleh kedalaman air
-                                    laut. Warna biru
-                                    merupakan sisi yang paling dalam, hijau pada sisi yang dangkal serta coklat merupakan
-                                    pada pasir
-                                    pantai</p>
                                 <p class="mb-0">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5744.901536727792!2d112.67663673296389!3d-8.439488875114831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd601147042ed43%3A0x3d8b26de55357956!2sPantai%20Tiga%20Warna!5e0!3m2!1sid!2sid!4v1683266958659!5m2!1sid!2sid"
-                                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                                        referrerpolicy="no-referrer-when-downgrade">
+                                        width="580" height="400" style="border:0; position:center;"
+                                        allowfullscreen=""loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                                     </iframe>
                                 </p>
                             </div>
                             <div class="tab-pane fade show active" id="nav-story" role="tabpanel"
                                 aria-labelledby="nav-story-tab">
-                                <p>terletak di Desa Sitiarjo, Kecamatan Sumber Manjing Wetan, Kabupaten Malang. Jarak tempuh
-                                    menuju Pantai 3 Warna dari pusat Kota Malang sekitar 150 km atau sekitar 3 jam dengan
-                                    kendaraan roda dua maupun roda empat.</p>
-                                <p class="mb-0">Rute Pantai 3 Warna dari wilayah Kota Malang, wisatawan dapat menuju ke
+                                <p>
+                                    Terletak di Desa Sitiarjo, Kecamatan Sumber Manjing Wetan, Kabupaten Malang. Jarak
+                                    tempuh menuju Pantai 3 Warna dari pusat Kota Malang sekitar 150 km atau sekitar 3 jam
+                                    dengan kendaraan roda dua maupun roda empat.
+                                </p>
+                                <p>
+                                    Rute Pantai 3 Warna dari wilayah Kota Malang, wisatawan dapat menuju ke
                                     Kecamatan Bululawang kemudian Kecamatan Turen dan langsung ke area Pantai Sendang Biru.
-                                    Sesampainya arah Pantai Sendang Biru, ikuti arah ke Clungup Mangrove Conservation.</p>
+                                    Sesampainya arah Pantai Sendang Biru, ikuti arah ke Clungup Mangrove Conservation.
+                                </p>
+                                <p>
+                                    Pantai Tiga Warna terletak di Kecamatan Sumber Manjing Wetan, Kabupaten
+                                    Malang, Jawa Timur. Pantai ini memiliki gradasi yang terdiri dari tiga warna, yaitu
+                                    biru, hijau, dan coklat kemerahan.
+                                </p>
+                                <p>
+                                    Warna air laut yang berbeda-beda tersebut disebabkan oleh kedalaman air
+                                    laut. Warna biru merupakan sisi yang paling dalam, hijau pada sisi yang dangkal serta
+                                    coklat merupakan pada pasir pantai
+                                </p>
                             </div>
                             <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
                                 <p>Harga tiket masuk Pantai 3 Warna adalah Rp 10 ribu per orang. Pengunjung diwajibkan
                                     menyewa pemandu wisata sebesar Rp 150 ribu untuk setiap rombongan yang berjumlah 5
-                                    orang.</p>
+                                    orang.
+                                </p>
                             </div>
                         </div>
                     </div>
