@@ -5,12 +5,12 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{{ asset('user_template/img/carousel-3.jpg') }}" alt="Image">
+                    <img class="w-100" src="{{ asset('user_template/img/carousel-pertama.jpg') }}" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-lg-8">
-                                    <h1 class="display-1 mb-4 animated slideInDown">Pantai 3 Warna
+                                    <h1 class="display-1 mb-4 animated slideInDown text-black-50">Pantai 3 Warna
                                     </h1>
                                 </div>
                             </div>
@@ -18,12 +18,36 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('user_template/img/carousel-2.jpg') }}" alt="Image">
+                    <img class="w-100" src="{{ asset('user_template/img/carousel-kedua.jpg') }}" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-lg-7">
-                                    <h1 class="display-1 mb-4 animated slideInDown">Pantai 3 Warna</h1>
+                                    <h1 class="display-1 mb-4 animated slideInDown text-black-50">Pantai 3 Warna</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="{{ asset('user_template/img/carousel-tiga.jpg') }}" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7">
+                                    <h1 class="display-1 mb-4 animated slideInDown text-black-50">Pantai 3 Warna</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="{{ asset('user_template/img/carousel-empat.jpg') }}" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-lg-7">
+                                    <h1 class="display-1 mb-4 animated slideInDown text-black-50">Pantai 3 Warna</h1>
                                 </div>
                             </div>
                         </div>
