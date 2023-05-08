@@ -41,6 +41,9 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::middleware(['guest'])->group(function () {
     Route::get('/register', [RegisteredUserController::class, 'create'])->name('register');
     Route::post('/register', [RegisteredUserController::class, 'store'])->name('register.store');
+    Route::get('/forgot-password', function () {
+        return view('auth.passwords.email');
+    })->name('password.request');
 });
 
 Route::middleware(['auth', 'verified'])->group(function () {
@@ -50,6 +53,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/pesan_tiket', [PesanTiketController::class, 'index'])->name('pesan_tiket');
+    Route::post('/pesan_tiket', [PesanTiketController::class, 'submitForm'])->name('pesan_tiket.submit');
     Route::get('/tiket', [TiketController::class, 'index'])->name('tiket');
     Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembayaran');
     Route::get('/lunas', [LunasController::class, 'index'])->name('lunas');
@@ -58,7 +62,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/bayar_ditempat_admin', [BayarDitempatAdminController::class, 'index'])->name('bayar_ditempat_admin');
     Route::get('/lunas_admin', [LunasAdminController::class, 'index'])->name('lunas_admin');
     Route::get('/batal_admin', [BatalAdminController::class, 'index'])->name('batal_admin');
-    Route::get('/forgot-password', function () {
-        return view('auth.passwords.email');
-    })->name('password.request');
+    Route::get('/cek_tiket', function () {
+        return view('cek_tiket');
+    })->name('cek_tiket');
 });

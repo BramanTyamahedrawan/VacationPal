@@ -25,18 +25,28 @@
                                                     placeholder="Email">
                                             </div>
                                             <div class="form-group">
-                                                <label for="exampleSelectGender">Jenis Kelamin</label>
-                                                <select class="form-control" id="exampleSelectGender">
-                                                    <option>Laki-laki</option>
-                                                    <option>Perempuan</option>
+                                                <label>Jenis Kelamin</label>
+                                                <select class="js-example-basic-single" style="width:100%">
+                                                    <option value="LA">Laki-Laki</option>
+                                                    <option value="PR">Perempuan</option>
                                                 </select>
                                             </div>
                                             <div class="form-group">
-                                                <label for="exampleInputCity1">Alamat</label>
-                                                <input type="text" class="form-control" id="exampleInputCity1"
-                                                    placeholder="Alamat">
+                                                <label for="exampleInputAlamat">Name Lengkap</label>
+                                                <input type="text" class="form-control" id="exampleInputAlamat"
+                                                    placeholder="Alamat Anda">
                                             </div>
-                                            <a href="{{ route('pembayaran') }}" class="btn btn-primary mr-2">Submit</a>
+                                            <div class="form-group">
+                                                <label for="exampleInputDate1">Tanggal Kedatangan</label>
+                                                <input type="date" class="form-control" id="exampleInputDate1"
+                                                    name="tanggal_kedatangan">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="harga">Harga</label>
+                                                <input type="number" class="form-control form-control-secondary bg-dark"
+                                                    id="harga" name="harga" value="10000" readonly>
+                                            </div>
+                                            <a href="#" class="btn btn-primary mr-2">Submit</a>
                                             <a href="{{ route('home') }}" class="btn btn-outline-info">Cancel</a>
                                         </form>
                                     </div>

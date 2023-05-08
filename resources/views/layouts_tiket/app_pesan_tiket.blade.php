@@ -5,6 +5,7 @@
 <!-- partial:partials/_navbar.html -->
 <!-- partial -->
 @yield('pesan_tiket')
+@yield('cek_tiket')
 <!-- page-body-wrapper ends -->
 
 @include('layouts_tiket.tail')

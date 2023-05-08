@@ -18,6 +18,8 @@
 <!-- Custom js for this page -->
 <script src="{{ asset('admin_template/template/assets/js/dashboard.js') }}"></script>
 <!-- End custom js for this page -->
+<!-- Custom js for this page -->
+<script src="{{ asset('admin_template/template/assets/js/datepicker.js') }}"></script>
 </body>
 
 </html>

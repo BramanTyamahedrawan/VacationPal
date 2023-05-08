@@ -13,4 +13,11 @@ class PesanTiketController extends Controller
     {
         return view('pesan_tiket');
     }
+    public function submitForm(Request $request)
+    {
+        // Lakukan validasi form dan proses data
+        // Misalnya, simpan data ke database
+
+        return redirect()->route('home')->with('success', 'Formulir berhasil dikirim!');
+    }
 }
