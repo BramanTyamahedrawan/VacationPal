@@ -14,10 +14,12 @@
                             <tr>
                                 <th> No </th>
                                 <th> Nama Lengkap </th>
-                                <th> Email </th>
+                                <th> Alamat Email </th>
                                 <th> Jenis Kelamin </th>
-                                <th> Alamat </th>
+                                <th> Alamat Lengkap </th>
                                 <th> No. Telepon </th>
+                                <th> Tanggal Kedatangan </th>
+                                <th> Harga </th>
                                 <th> Status </th>
                             </tr>
                         </thead>
