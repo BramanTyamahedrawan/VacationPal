@@ -67,7 +67,7 @@
 @endsection
 
 @section('about')
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" id="about">
         <div class="container">
             <div class="row g-4 align-items-end mb-4">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -90,9 +90,9 @@
                                 <button class="nav-link fw-semi-bold" id="nav-mission-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission"
                                     aria-selected="false">Lokasi</button>
-                                <button class="nav-link fw-semi-bold" id="nav-vision-tab" data-bs-toggle="tab"
+                                {{-- <button class="nav-link fw-semi-bold" id="nav-vision-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-vision" type="button" role="tab" aria-controls="nav-vision"
-                                    aria-selected="false">Harga</button>
+                                    aria-selected="false">Harga</button> --}}
                             </div>
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
@@ -122,18 +122,22 @@
                                     Malang, Jawa Timur. Pantai ini memiliki gradasi yang terdiri dari tiga warna, yaitu
                                     biru, hijau, dan coklat kemerahan.
                                 </p>
-                                <p>
-                                    Warna air laut yang berbeda-beda tersebut disebabkan oleh kedalaman air
-                                    laut. Warna biru merupakan sisi yang paling dalam, hijau pada sisi yang dangkal serta
-                                    coklat merupakan pada pasir pantai
-                                </p>
-                            </div>
-                            <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
                                 <p>Harga tiket masuk Pantai 3 Warna adalah Rp 10 ribu per orang. Pengunjung diwajibkan
                                     menyewa pemandu wisata sebesar Rp 150 ribu untuk setiap rombongan yang berjumlah 5
                                     orang.
                                 </p>
+                                {{-- <p>
+                                    Warna air laut yang berbeda-beda tersebut disebabkan oleh kedalaman air
+                                    laut. Warna biru merupakan sisi yang paling dalam, hijau pada sisi yang dangkal serta
+                                    coklat merupakan pada pasir pantai
+                                </p> --}}
                             </div>
+                            {{-- <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
+                                <p>Harga tiket masuk Pantai 3 Warna adalah Rp 10 ribu per orang. Pengunjung diwajibkan
+                                    menyewa pemandu wisata sebesar Rp 150 ribu untuk setiap rombongan yang berjumlah 5
+                                    orang.
+                                </p>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -195,7 +199,7 @@
 @endsection
 
 @section('fitur')
-    <div class="container-xxl service py-5">
+    <div class="container-xxl service py-5" id="fitur">
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Fitur Kami</p>
