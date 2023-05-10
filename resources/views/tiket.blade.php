@@ -31,6 +31,8 @@
                                 <td> L </td>
                                 <td> Surabaya </td>
                                 <td> 08123456789 </td>
+                                <td></td>
+                                <td></td>
                                 <td><label class="badge badge-success">Lunas</label></td>
                             </tr>
                             <tr>
@@ -40,6 +42,8 @@
                                 <td> L </td>
                                 <td> Jakarta </td>
                                 <td> 08123456789 </td>
+                                <td></td>
+                                <td></td>
                                 <td><label class="badge badge-warning">Bayar Ditempat</label></td>
                             </tr>
                         </tbody>
