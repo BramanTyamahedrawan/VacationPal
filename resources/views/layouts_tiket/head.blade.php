@@ -36,8 +36,13 @@
         html::-webkit-scrollbar-thumb {
             background: #2d2e37;
         }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
     </style>
 </head>
 
 <body>
-    
