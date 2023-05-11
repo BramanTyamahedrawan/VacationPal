@@ -6,7 +6,14 @@
     --light: #dfe4fd;
     --dark: #011a41;
 }
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: transparent;
 
+}
+html::-webkit-scrollbar-thumb{
+    background: #2d2e37;
+}
 .back-to-top {
     position: fixed;
     display: none;
