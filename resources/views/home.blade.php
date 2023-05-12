@@ -8,10 +8,9 @@
                     <img class="w-100" src="{{ asset('user_template/img/carousel-pertama.jpg') }}" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-lg-8">
-                                    <h1 class="display-1 mb-4 animated slideInDown text-black-50">Pantai 3 Warna
-                                    </h1>
+                            <div class="d-flex justify-content-center mb-1">
+                                <div class="col-lg-6">
+                                    <h1 class="display-1 mb-4 animated slideInDown" style="color:#0077be;">&nbsp;Pantai 3 Warna</h1>
                                 </div>
                             </div>
                         </div>
@@ -21,9 +20,9 @@
                     <img class="w-100" src="{{ asset('user_template/img/carousel-kedua.jpg') }}" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-lg-7">
-                                    <h1 class="display-1 mb-4 animated slideInDown text-black-50">Pantai 3 Warna</h1>
+                            <div class="d-flex justify-content-lg-center mb-1">
+                                <div class="col-lg-6">
+                                    <h1 class="display-1 mb-4 animated slideInDown" style="color:#0077be;">&nbsp;Pantai 3 Warna</h1>
                                 </div>
                             </div>
                         </div>
@@ -33,9 +32,9 @@
                     <img class="w-100" src="{{ asset('user_template/img/carousel-tiga.jpg') }}" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-lg-7">
-                                    <h1 class="display-1 mb-4 animated slideInDown text-black-50">Pantai 3 Warna</h1>
+                            <div class="d-flex justify-content-lg-center mb-1">
+                                <div class="col-lg-6">
+                                    <h1 class="display-1 mb-4 animated slideInDown"style="color:#0077be;">&nbsp;Pantai 3 Warna</h1>
                                 </div>
                             </div>
                         </div>
@@ -45,9 +44,9 @@
                     <img class="w-100" src="{{ asset('user_template/img/carousel-empat.jpg') }}" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
-                            <div class="row justify-content-start">
-                                <div class="col-lg-7">
-                                    <h1 class="display-1 mb-4 animated slideInDown text-black-50">Pantai 3 Warna</h1>
+                            <div class="d-flex justify-content-center mb-1">
+                                <div class="col-lg-6">
+                                    <h1 class="display-1 mb-4 animated slideInDown"style="color:#0077be;">&nbsp;Pantai 3 Warna</h1>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +70,7 @@
         <div class="container">
             <div class="row g-4 align-items-end mb-4">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid rounded" src="{{ asset('user_template/img/about-1.jpg') }}">
+                    <img class="img-fluid rounded" src="{{ asset('user_template/img/aboutus.jpg') }}">
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Tentang kami</p>
