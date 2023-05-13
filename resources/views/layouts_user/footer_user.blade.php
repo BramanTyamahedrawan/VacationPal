@@ -6,7 +6,7 @@
                 <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jl. Sendang Biru, Area Sawah/Kebun, Tambakrejo,
                     Kec. Sumbermanjing Wetan, Kabupaten Malang, Jawa Timur 65176</p>
                 <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+62 8133 3777 659</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>VacationPal@gmail.com</p>
                 <div class="d-flex pt-2">
                     <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
                             class="fab fa-twitter"></i></a>
@@ -14,8 +14,6 @@
                             class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
                             class="fab fa-youtube"></i></a>
-                    <a class="btn btn-square btn-outline-light rounded-circle me-2" href=""><i
-                            class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
 
