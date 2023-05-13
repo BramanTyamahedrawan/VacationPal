@@ -27,13 +27,11 @@
     <!-- End layout styles -->
     <link rel="shortcut icon" href="{{ asset('admin_template/template/assets/images/favicon.png') }}" />
     <style>
-        html::-webkit-scrollbar {
-            width: 0.5rem;
-            background: transparent;
-
+        body::-webkit-scrollbar {
+            display: none;
         }
 
-        html::-webkit-scrollbar-thumb {
+        body::-webkit-scrollbar-thumb {
             background: #2d2e37;
         }
 
@@ -46,4 +44,3 @@
 </head>
 
 <body>
-    
