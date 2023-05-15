@@ -9,7 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
+    public function up()
     {
         Schema::create('user_tikets', function (Blueprint $table) {
             $table->id();
@@ -20,11 +20,14 @@ return new class extends Migration
             $table->string('no_hp');
             $table->timestamp('tanggal_kedatangan');
             $table->string('harga');
-            $table->string('status');
 
             $table->foreign('email')->references('email')->on('users');
+            $table->timestamps();
         });
 
+        Schema::table('user_tikets', function (Blueprint $table) {
+            $table->string('status')->nullable()->after('harga')->default('Belum Lunas');
+        });
     }
 
     /**

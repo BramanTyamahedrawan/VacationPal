@@ -24,28 +24,25 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td> 1 </td>
-                                <td> John Richards </td>
-                                <td> johnrichard@gmail.com </td>
-                                <td> L </td>
-                                <td> Surabaya </td>
-                                <td> 08123456789 </td>
-                                <td></td>
-                                <td></td>
-                                <td><label class="badge badge-success">Lunas</label></td>
-                            </tr>
-                            <tr>
-                                <td> 2 </td>
-                                <td> Messsy Adam </td>
-                                <td> messy@gmail.com </td>
-                                <td> L </td>
-                                <td> Jakarta </td>
-                                <td> 08123456789 </td>
-                                <td></td>
-                                <td></td>
-                                <td><label class="badge badge-warning">Bayar Ditempat</label></td>
-                            </tr>
+                            @foreach ($userTikets as $userTiket)
+                                <tr>
+                                    <td> {{ $userTiket->id }} </td>
+                                    <td> {{ $userTiket->nama }} </td>
+                                    <td> {{ $userTiket->email }} </td>
+                                    <td> {{ $userTiket->jenis_kelamin }} </td>
+                                    <td> {{ $userTiket->alamat }} </td>
+                                    <td> {{ $userTiket->no_hp }} </td>
+                                    <td> {{ $userTiket->tanggal_kedatangan }} </td>
+                                    <td> {{ $userTiket->harga }} </td>
+                                    <td>
+                                        @if ($userTiket->status == 'Lunas')
+                                            <label class="badge badge-success">Lunas</label>
+                                        @elseif ($userTiket->status == 'Bayar Ditempat')
+                                            <label class="badge badge-warning">Bayar Ditempat</label>
+                                        @endif
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

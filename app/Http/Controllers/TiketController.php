@@ -3,14 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User_tiket;
 
 class TiketController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
     /**
      * Show the application dashboard.
      *
@@ -18,6 +14,7 @@ class TiketController extends Controller
      */
     public function index()
     {
-        return view('tiket');
+        $userTikets = User_tiket::all();
+        return view('tiket', compact('userTikets'));
     }
 }

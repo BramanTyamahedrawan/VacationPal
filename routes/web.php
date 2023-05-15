@@ -53,7 +53,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/pesan_tiket', [PesanTiketController::class, 'index'])->name('pesan_tiket');
-    Route::post('/pesan_tiket', [PesanTiketController::class, 'submitForm'])->name('pesan_tiket.submit');
+    Route::post('/pesan_tiket', [PesanTiketController::class, 'store'])->name('pesan_tiket.store');
     Route::get('/tiket', [TiketController::class, 'index'])->name('tiket');
     Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembayaran');
     Route::get('/lunas', [LunasController::class, 'index'])->name('lunas');

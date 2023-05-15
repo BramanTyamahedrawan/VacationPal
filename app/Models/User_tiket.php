@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class User_tiket extends Model
 {
     use HasFactory;
+
     protected $table = 'user_tikets';
     protected $fillable = [
         'nama',
@@ -19,5 +20,4 @@ class User_tiket extends Model
         'harga',
         'status',
     ];
-
 }
