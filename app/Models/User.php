@@ -43,4 +43,14 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Get the user's full name.
+     *
+     * @return string
+     */
+    public function tiket()
+    {
+        return $this->hasMany(User_tiket::class, 'email', 'email');
+    }
 }

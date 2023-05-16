@@ -12,7 +12,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('user_tikets', function (Blueprint $table) {
-            $table->id();
+            $table->id()->autoIncrement()->unique();
             $table->string('nama');
             $table->string('email');
             $table->string('jenis_kelamin');
@@ -20,13 +20,12 @@ return new class extends Migration
             $table->string('no_hp');
             $table->timestamp('tanggal_kedatangan');
             $table->string('harga');
-
-            $table->foreign('email')->references('email')->on('users');
             $table->timestamps();
         });
 
         Schema::table('user_tikets', function (Blueprint $table) {
             $table->string('status')->nullable()->after('harga')->default('Belum Lunas');
+            $table->foreignId('email')->constrained('users')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 

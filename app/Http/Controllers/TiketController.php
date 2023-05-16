@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User_tiket;
+use Illuminate\Support\Facades\Auth;
 
 class TiketController extends Controller
 {
@@ -14,7 +15,7 @@ class TiketController extends Controller
      */
     public function index()
     {
-        $userTikets = User_tiket::all();
-        return view('tiket', compact('userTikets'));
+        $tiket = User_tiket::where('email', Auth::user()->email)->get();
+        return view('tiket', ['userTikets' => $tiket]);
     }
 }
