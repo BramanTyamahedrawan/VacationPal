@@ -20,4 +20,9 @@ class User_tiket extends Model
         'harga',
         'status',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'email', 'email');
+    }
 }
