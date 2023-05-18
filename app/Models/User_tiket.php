@@ -19,6 +19,7 @@ class User_tiket extends Model
         'tanggal_kedatangan',
         'harga',
         'status',
+        'batal',
     ];
 
     public function user()
