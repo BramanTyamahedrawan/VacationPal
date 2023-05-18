@@ -15,7 +15,17 @@ class TiketController extends Controller
      */
     public function index()
     {
-        $tiket = User_tiket::where('email', Auth::user()->email)->get();
-        return view('tiket', ['userTikets' => $tiket]);
+        $tiketBelumDibatalkan = User_tiket::where('email', Auth::user()->email)
+            ->where('status', '!=', 'Dibatalkan')
+            ->get();
+
+        $tiketDibatalkan = User_tiket::where('email', Auth::user()->email)
+            ->where('status', 'Dibatalkan')
+            ->get();
+
+        return view('tiket', [
+            'userTikets' => $tiketBelumDibatalkan,
+            'tiketDibatalkan' => $tiketDibatalkan
+        ]);
     }
 }
