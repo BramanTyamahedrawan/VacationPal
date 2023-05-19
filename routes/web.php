@@ -60,12 +60,13 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembayaran');
     Route::get('/lunas', [LunasController::class, 'index'])->name('lunas');
     Route::get('/bayar_ditempat', [BayarDitempatController::class, 'index'])->name('bayar_ditempat');
-    Route::post('/batal', [BatalController::class, 'index'])->name('batal');
+    Route::get('/batal', [BatalController::class, 'index'])->name('batal');
+    Route::delete('/batal/{id}', [BatalController::class, 'destroy'])->name('batal.destroy');
+    Route::get('/request', [RequestController::class, 'index'])->name('request');
     Route::get('/bayar_ditempat_admin', [BayarDitempatAdminController::class, 'index'])->name('bayar_ditempat_admin');
     Route::get('/lunas_admin', [LunasAdminController::class, 'index'])->name('lunas_admin');
     Route::get('/batal_admin', [BatalAdminController::class, 'index'])->name('batal_admin');
     Route::get('/cek_tiket', function () {
         return view('cek_tiket');
     })->name('cek_tiket');
-    Route::get('/request', [RequestController::class, 'index'])->name('request');
 });
