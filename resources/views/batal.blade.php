@@ -44,14 +44,12 @@
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($tiket->status != 'Dibatalkan')
-                                            <form action="{{ route('batal') }}" method="POST">
-                                                @csrf
-                                                <input type="hidden" name="tiket_id" value="{{ $tiket->id }}">
-                                                <button type="submit" class="btn btn-danger btn-sm"
-                                                    onclick="return confirm('Apakah Anda yakin ingin membatalkan tiket ini?')">Batal</button>
-                                            </form>
-                                        @endif
+                                        <form action="{{ route('batal.destroy', $tiket->id) }}" method="POST"
+                                            onsubmit="return confirm('Apakah Anda yakin ingin menghapus tiket ini?')">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button class="btn btn-info btn-sm" type="submit">Hapus</button>
+                                        </form>
                                     </td>
                                 </tr>
                             @endforeach
