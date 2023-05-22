@@ -39,8 +39,14 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="exampleInputEmail3">Alamat Email</label>
-                                                        <input type="email" class="form-control" id="exampleInputEmail3"
-                                                            placeholder="Email" name="email">
+                                                        @if (Auth::check())
+                                                            <input type="email" class="form-control"
+                                                                style="background-color: rgb(42,48,56)"
+                                                                id="exampleInputEmail3" placeholder="Email" name="email"
+                                                                value="{{ Auth::user()->email }}" readonly>
+                                                        @endif
+                                                        {{-- <input type="email" class="form-control" id="exampleInputEmail3"
+                                                            placeholder="Email" name="email"> --}}
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Jenis Kelamin</label>
