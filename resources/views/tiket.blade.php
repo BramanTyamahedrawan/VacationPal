@@ -3,7 +3,7 @@
 @section('title', 'Tiketku')
 
 @section('booking')
-    <div class="col-lg-12 grid-margin stretch-card">
+    <div class="col-lg-14 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Booking Tiket</h4>
@@ -21,6 +21,7 @@
                                 <th> Tanggal Kedatangan </th>
                                 <th> Harga </th>
                                 <th> Status </th>
+                                <th> Batal </th>
                             </tr>
                         </thead>
                         <tbody>
@@ -40,6 +41,8 @@
                                         @elseif ($userTiket->status == 'Bayar Ditempat')
                                             <label class="badge badge-warning">Bayar Ditempat</label>
                                         @endif
+                                    </td>
+                                    <td>
                                     </td>
                                 </tr>
                             @endforeach
