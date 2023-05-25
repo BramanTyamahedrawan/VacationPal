@@ -15,6 +15,7 @@ use App\Http\Controllers\LunasAdminController;
 use App\Http\Controllers\BatalAdminController;
 use App\Http\Controllers\PesanTiketController;
 use App\Http\Controllers\RequestController;
+use App\Http\Controllers\DetailController;
 use App\Http\Controllers\RegisterController;
 use Laravel\Fortify\Http\Controllers\RegisteredUserController;
 use Illuminate\Auth\Events\Registered;
@@ -69,4 +70,5 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/cek_tiket', function () {
         return view('cek_tiket');
     })->name('cek_tiket');
+    Route::get('/detail', [DetailController::class, 'index'])->name('detail');
 });

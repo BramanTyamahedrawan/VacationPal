@@ -11,25 +11,25 @@
         <li class="nav-item menu-items">
             <a class="nav-link" href="{{ route('tiket') }}">
                 <span class="menu-icon">
-                    <i class="mdi mdi-speedometer"></i>
+                    <i class="mdi mdi-table-large"></i>
                 </span>
                 <span class="menu-title">Tiket Booking</span>
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ route('lunas') }}">
+            <a class="nav-link" href="{{ route('detail') }}">
                 <span class="menu-icon">
                     <i class="mdi mdi-playlist-play"></i>
                 </span>
-                <span class="menu-title">Lunas</span>
+                <span class="menu-title">Detail</span>
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ route('bayar_ditempat') }}">
+            <a class="nav-link" href="{{ route('lunas') }}">
                 <span class="menu-icon">
-                    <i class="mdi mdi-table-large"></i>
+                    <i class="mdi mdi-speedometer"></i>
                 </span>
-                <span class="menu-title">Bayar Ditempat</span>
+                <span class="menu-title">Lunas</span>
             </a>
         </li>
         <li class="nav-item menu-items">
