@@ -70,5 +70,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/cek_tiket', function () {
         return view('cek_tiket');
     })->name('cek_tiket');
-    Route::get('/detail', [DetailController::class, 'index'])->name('detail');
+    Route::get('/detail', [DetailController::class, 'index'])->name('detail.index');
+    Route::get('/detail/{id}', [DetailController::class, 'show'])->name('detail.show');
 });
