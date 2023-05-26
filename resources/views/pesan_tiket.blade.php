@@ -73,10 +73,14 @@
                                                             name="tanggal_kedatangan">
                                                     </div>
                                                     <div class="form-group">
+                                                        <label for="exampleInputJumlahTiket">Jumlah Tiket</label>
+                                                        <input type="number" class="form-control" id="jml_tiket"
+                                                            name="jumlah_tiket" onkeyup="sum();">
+                                                    </div>
+                                                    <div class="form-group">
                                                         <label for="harga">Harga</label>
-                                                        <input type="number"
-                                                            class="form-control form-control-secondary bg-dark"
-                                                            id="harga" name="harga" value="10000" readonly>
+                                                        <input type="number" class="form-control bg-dark" id="harga"
+                                                            name="harga" onkeyup="sum();" readonly>
                                                     </div>
                                                     <button type="submit" class="btn btn-primary mr-2" name="status"
                                                         value="Bayar Ditempat">Pesan</button>
@@ -91,4 +95,13 @@
                     </div>
                 </div>
             </div>
+            <script>
+                function sum() {
+                    var jumlah_tiket = document.getElementById('jml_tiket').value;
+                    var harga = jumlah_tiket * 10000;
+                    if (!isNaN(harga)) {
+                        document.getElementById('harga').value = harga;
+                    }
+                }
+            </script>
         @endsection
