@@ -53,8 +53,8 @@
                                                         <select class="js-example-basic-single" style="width:100%"
                                                             name="jenis_kelamin">
                                                             <option value="0">Pilih Jenis Kelamin</option>
-                                                            <option value="LA">Laki-Laki</option>
-                                                            <option value="PR">Perempuan</option>
+                                                            <option value="Laki-laki">Laki-Laki</option>
+                                                            <option value="Perempuan">Perempuan</option>
                                                         </select>
                                                     </div>
                                                     <div class="form-group">
