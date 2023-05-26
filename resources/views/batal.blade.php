@@ -13,11 +13,11 @@
                             <tr>
                                 <th> No </th>
                                 <th> Nama Lengkap </th>
-                                <th> Alamat Email </th>
+                                <th> Email </th>
                                 <th> Jenis Kelamin </th>
-                                <th> Alamat Lengkap </th>
+                                <th> Alamat </th>
                                 <th> No. Telepon </th>
-                                <th> Tanggal Kedatangan </th>
+                                <th> Tgl Kedatangan </th>
                                 <th> Harga </th>
                                 <th> Status </th>
                                 <th> Batal </th>
