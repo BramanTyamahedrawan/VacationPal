@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('jenis_kelamin');
             $table->string('alamat');
             $table->string('no_hp');
-            $table->timestamp('tanggal_kedatangan');
+            $table->date('tanggal_kedatangan');
             $table->string('harga');
             $table->timestamps();
         });
