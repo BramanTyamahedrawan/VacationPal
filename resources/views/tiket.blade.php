@@ -25,7 +25,7 @@
                         </thead>
                         <tbody>
                             @foreach ($userTikets as $userTiket)
-                                <tr>
+                                <tr onclick="window.location='{{ route('detail.show', ['id' => $userTiket->id]) }}'">
                                     <td>{{ $userTiket->id }}</td>
                                     <td>{{ $userTiket->nama }}</td>
                                     <td>{{ $userTiket->email }}</td>
