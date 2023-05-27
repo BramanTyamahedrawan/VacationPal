@@ -20,6 +20,8 @@
 <!-- End custom js for this page -->
 <!-- Custom js for this page -->
 <script src="{{ asset('admin_template/template/assets/js/datepicker.js') }}"></script>
+<script src="{{ asset('admin_template/template/assets/js/jquery-ui.js') }}"></script>
+<script src="{{ asset('detail_tiket/script.js') }}"></script>
 </body>
 
 </html>
