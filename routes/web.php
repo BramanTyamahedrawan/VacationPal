@@ -52,6 +52,8 @@ Route::middleware(['guest'])->group(function () {
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::get('/home_admin', [HomeAdminController::class, 'index'])->name('home_admin');
+    Route::get('/batal_admin', [BatalAdminController::class, 'index'])->name('batal_admin');
+    Route::delete('/batal_admin/{id}', [BatalAdminController::class, 'destroy'])->name('batal_admin.destroy');
 });
 
 Route::middleware(['auth', 'verified'])->group(function () {
@@ -66,7 +68,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/request', [RequestController::class, 'index'])->name('request');
     Route::get('/bayar_ditempat_admin', [BayarDitempatAdminController::class, 'index'])->name('bayar_ditempat_admin');
     Route::get('/lunas_admin', [LunasAdminController::class, 'index'])->name('lunas_admin');
-    Route::get('/batal_admin', [BatalAdminController::class, 'index'])->name('batal_admin');
     Route::get('/cek_tiket', function () {
         return view('cek_tiket');
     })->name('cek_tiket');

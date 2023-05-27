@@ -30,4 +30,21 @@ class BatalAdminController extends Controller
 
         return view('admin_views.batal_admin', ['tiketDibatalkan' => $tiketDibatalkan]);
     }
+
+    public function destroy($id)
+    {
+        // Temukan tiket berdasarkan ID
+        $tiket = User_tiket::find($id);
+
+        if ($tiket) {
+            // Hapus tiket jika ditemukan
+            $tiket->delete();
+        }
+
+        // Pindahkan tiket yang dibatalkan ke halaman batal.blade.php
+        $tiketDibatalkan = User_tiket::where('status', 'Dibatalkan')
+            ->get();
+
+        return view('admin_views.batal_admin', ['tiketDibatalkan' => $tiketDibatalkan]);
+    }
 }
