@@ -33,20 +33,42 @@
                                                         <th> Tanggal Kedatangan </th>
                                                         <th> Harga </th>
                                                         <th> Status </th>
+                                                        <th> Hapus </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td> 1 </td>
-                                                        <td> Herman Beck </td>
-                                                        <td> herman@gmail.com</td>
-                                                        <td> L </td>
-                                                        <td> Bandung </td>
-                                                        <td> 08123456789 </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td><label class="badge badge-danger">Batal</label></td>
-                                                    </tr>
+                                                    @foreach ($tiketDibatalkan as $tiket)
+                                                        <tr>
+                                                            <td>{{ $tiket->id }}</td>
+                                                            <td>{{ $tiket->nama }}</td>
+                                                            <td>{{ $tiket->email }}</td>
+                                                            <td>{{ $tiket->jenis_kelamin }}</td>
+                                                            <td>{{ $tiket->alamat }}</td>
+                                                            <td>{{ $tiket->no_hp }}</td>
+                                                            <td>{{ $tiket->tanggal_kedatangan }}</td>
+                                                            <td>{{ $tiket->harga }}</td>
+                                                            <td>
+                                                                @if ($tiket->status == 'Lunas')
+                                                                    <label class="badge badge-success">Lunas</label>
+                                                                @elseif ($tiket->status == 'Bayar Ditempat')
+                                                                    <label class="badge badge-warning">Bayar
+                                                                        Ditempat</label>
+                                                                @elseif ($tiket->status == 'Dibatalkan')
+                                                                    <label class="badge badge-danger">Dibatalkan</label>
+                                                                @endif
+                                                            </td>
+                                                            <td>
+                                                                <form action="{{ route('batal.destroy', $tiket->id) }}"
+                                                                    method="POST"
+                                                                    onsubmit="return confirm('Apakah Anda yakin ingin menghapus tiket ini?')">
+                                                                    @csrf
+                                                                    @method('DELETE')
+                                                                    <button class="btn btn-info btn-sm"
+                                                                        type="submit">Hapus</button>
+                                                                </form>
+                                                            </td>
+                                                        </tr>
+                                                    @endforeach
                                                 </tbody>
                                             </table>
                                         </div>
