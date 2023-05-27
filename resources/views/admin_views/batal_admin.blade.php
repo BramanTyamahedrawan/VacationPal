@@ -58,7 +58,8 @@
                                                                 @endif
                                                             </td>
                                                             <td>
-                                                                <form action="{{ route('batal.destroy', $tiket->id) }}"
+                                                                <form
+                                                                    action="{{ route('batal_admin.destroy', $tiket->id) }}"
                                                                     method="POST"
                                                                     onsubmit="return confirm('Apakah Anda yakin ingin menghapus tiket ini?')">
                                                                     @csrf
