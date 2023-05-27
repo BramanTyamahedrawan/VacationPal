@@ -14,7 +14,7 @@
                             <div class="col-5 col-sm-7 col-xl-8 p-0">
                                 <h2 class="mb-1 mb-sm-0">Selamat Datang di Halaman Admin</h2>
                             </div>
-                            <div class="col-lg-14 grid-margin stretch-card">
+                            <div class="col-lg-12 grid-margin stretch-card">
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="card-title">Booking Tiket</h4>
@@ -23,95 +23,52 @@
                                             <table class="table table-bordered">
                                                 <thead>
                                                     <tr>
-                                                        <th> No </th>
-                                                        <th> Nama Lengkap </th>
-                                                        <th> Alamat Email </th>
-                                                        <th> Jenis Kelamin </th>
-                                                        <th> Alamat Lengkap </th>
-                                                        <th> No. Telepon </th>
-                                                        <th> Tanggal Kedatangan </th>
-                                                        <th> Harga </th>
-                                                        <th> Status </th>
+                                                        <th>No</th>
+                                                        <th>Nama Lengkap</th>
+                                                        <th>Email</th>
+                                                        <th>Jenis Kelamin</th>
+                                                        <th>Alamat</th>
+                                                        <th>No. Telepon</th>
+                                                        <th>Tgl Kedatangan</th>
+                                                        <th>Harga</th>
+                                                        <th>Status</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td> 1 </td>
-                                                        <td> Herman Beck </td>
-                                                        <td> herman@gmail.com</td>
-                                                        <td> L </td>
-                                                        <td> Bandung </td>
-                                                        <td> 08123456789 </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td><label class="badge badge-danger">Batal</label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td> 2 </td>
-                                                        <td> Messsy Adam </td>
-                                                        <td> messy@gmail.com </td>
-                                                        <td> L </td>
-                                                        <td> Jakarta </td>
-                                                        <td> 08123456789 </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td><label class="badge badge-warning">Bayar Ditempat</label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td> 3 </td>
-                                                        <td> John Richards </td>
-                                                        <td> johnrichard@gmail.com </td>
-                                                        <td> L </td>
-                                                        <td> Surabaya </td>
-                                                        <td> 08123456789 </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td><label class="badge badge-success">Lunas</label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td> 4 </td>
-                                                        <td> Peter Meggik </td>
-                                                        <td> petermeggik@gmail.com </td>
-                                                        <td> L </td>
-                                                        <td> Malang </td>
-                                                        <td> 08123456789 </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td><label class="badge badge-success">Lunas</label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td> 5 </td>
-                                                        <td> Edward </td>
-                                                        <td> edward@gmail.com </td>
-                                                        <td> L </td>
-                                                        <td> Bandung </td>
-                                                        <td> 08123456789 </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td><label class="badge badge-warning">Bayar Ditempat</label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td> 6 </td>
-                                                        <td> John Doe </td>
-                                                        <td> johndoe@gmail.com </td>
-                                                        <td> L </td>
-                                                        <td> Jakarta </td>
-                                                        <td> 08123456789 </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td><label class="badge badge-success">Lunas</label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td> 7 </td>
-                                                        <td> Henry Tom </td>
-                                                        <td> henrytom@gmail.com </td>
-                                                        <td> L </td>
-                                                        <td> Bandung </td>
-                                                        <td> 08123456789 </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td><label class="badge badge-success">Lunas</label></td>
-                                                    </tr>
+                                                    @isset($userTikets)
+                                                        @foreach ($userTikets as $userTiket)
+                                                            <tr>
+                                                                <td>{{ $userTiket->id }}</td>
+                                                                <td>{{ $userTiket->nama }}</td>
+                                                                <td>{{ $userTiket->email }}</td>
+                                                                <td>{{ $userTiket->jenis_kelamin }}</td>
+                                                                <td>{{ $userTiket->alamat }}</td>
+                                                                <td>{{ $userTiket->no_hp }}</td>
+                                                                <td>{{ $userTiket->tanggal_kedatangan }}</td>
+                                                                <td>{{ $userTiket->harga }}</td>
+                                                                <td>
+                                                                    @if ($userTiket->status == 'Lunas')
+                                                                        <label class="badge badge-success">Lunas</label>
+                                                                    @elseif ($userTiket->status == 'Bayar Ditempat')
+                                                                        <label class="badge badge-warning">Bayar
+                                                                            Ditempat</label>
+                                                                    @endif
+                                                                </td>
+                                                                <td>
+                                                                    @if ($userTiket->status != 'Dibatalkan')
+                                                                        <form action="{{ route('batal_admin') }}"
+                                                                            method="GET">
+                                                                            @csrf
+                                                                            <input type="hidden" name="tiket_id"
+                                                                                value="{{ $userTiket->id }}">
+                                                                            <button type="submit" class="btn btn-danger btn-sm"
+                                                                                onclick="return confirm('Apakah Anda yakin ingin membatalkan tiket ini?')">Batal</button>
+                                                                        </form>
+                                                                    @endif
+                                                                </td>
+                                                            </tr>
+                                                        @endforeach
+                                                    @endisset
                                                 </tbody>
                                             </table>
                                         </div>
