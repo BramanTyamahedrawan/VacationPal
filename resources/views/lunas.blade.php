@@ -10,7 +10,7 @@
                 <h4 class="card-title">Sudah Bayar</h4>
                 </p>
                 <div class="table-responsive">
-                    <table class="table table-bordered">
+                    <table class="table table-bordered" style="color: rgb(233, 232, 232)">
                         <thead>
                             <tr>
                                 <th> No </th>
