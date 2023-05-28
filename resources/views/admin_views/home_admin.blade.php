@@ -20,18 +20,19 @@
                                         <h4 class="card-title">Booking Tiket</h4>
                                         </p>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered">
+                                            <table class="table table-bordered" style="color: rgb(233, 232, 232)">
                                                 <thead>
                                                     <tr>
                                                         <th>No</th>
-                                                        <th>Nama Lengkap</th>
-                                                        <th>Email</th>
-                                                        <th>Jenis Kelamin</th>
-                                                        <th>Alamat</th>
-                                                        <th>No. Telepon</th>
-                                                        <th>Tgl Kedatangan</th>
-                                                        <th>Harga</th>
-                                                        <th>Status</th>
+                                                        <th> Nama Lengkap </th>
+                                                        <th> Email </th>
+                                                        <th> Jenis Kelamin </th>
+                                                        <th> Alamat </th>
+                                                        <th> No. Telepon </th>
+                                                        <th> Tgl Kedatangan </th>
+                                                        <th> Harga </th>
+                                                        <th> Status </th>
+                                                        <th>Batal</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
