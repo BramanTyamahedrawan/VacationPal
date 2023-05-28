@@ -21,22 +21,22 @@
                                         <h4 class="card-title">Booking Tiket</h4>
                                         </p>
                                         <div class="table-responsive">
-                                            <table class="table table-bordered">
+                                            <table class="table table-bordered" style="color: rgb(233, 232, 232)">
                                                 <thead>
                                                     <tr>
                                                         <th> No </th>
                                                         <th> Nama Lengkap </th>
-                                                        <th> Alamat Email </th>
+                                                        <th> Email </th>
                                                         <th> Jenis Kelamin </th>
-                                                        <th> Alamat Lengkap </th>
+                                                        <th> Alamat </th>
                                                         <th> No. Telepon </th>
-                                                        <th> Tanggal Kedatangan </th>
+                                                        <th> Tgl Kedatangan </th>
                                                         <th> Harga </th>
                                                         <th> Status </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
+                                                    {{-- <tr>
                                                         <td> 2 </td>
                                                         <td> Messsy Adam </td>
                                                         <td> messy@gmail.com </td>
@@ -57,7 +57,29 @@
                                                         <td></td>
                                                         <td></td>
                                                         <td><label class="badge badge-warning">Bayar Ditempat</label></td>
-                                                    </tr>
+                                                    </tr> --}}
+                                                    @isset($userTikets)
+                                                        @foreach ($userTikets as $userTiket)
+                                                            <tr>
+                                                                <td>{{ $userTiket->id }}</td>
+                                                                <td>{{ $userTiket->nama }}</td>
+                                                                <td>{{ $userTiket->email }}</td>
+                                                                <td>{{ $userTiket->jenis_kelamin }}</td>
+                                                                <td>{{ $userTiket->alamat }}</td>
+                                                                <td>{{ $userTiket->no_hp }}</td>
+                                                                <td>{{ $userTiket->tanggal_kedatangan }}</td>
+                                                                <td>{{ $userTiket->harga }}</td>
+                                                                <td>
+                                                                    @if ($userTiket->status == 'Bayar Ditempat')
+                                                                        <label class="badge badge-warning">Bayar
+                                                                            Ditempat</label>
+                                                                    @elseif ($userTiket->status == 'Lunas')
+                                                                        <label class="badge badge-success">Lunas</label>
+                                                                    @endif
+                                                                </td>
+                                                            </tr>
+                                                        @endforeach
+                                                    @endisset
                                                 </tbody>
                                             </table>
                                         </div>
