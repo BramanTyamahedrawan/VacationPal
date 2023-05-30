@@ -80,21 +80,21 @@
                                                         <td></td>
                                                         <td><label class="badge badge-success">Lunas</label></td>
                                                     </tr> --}}
-                                                    @isset($userTikets)
-                                                        @foreach ($userTikets as $userTiket)
+                                                    @isset($userTiket)
+                                                        @foreach ($userTiket as $tiket)
                                                             <tr>
-                                                                <td>{{ $userTiket->id }}</td>
-                                                                <td>{{ $userTiket->nama }}</td>
-                                                                <td>{{ $userTiket->email }}</td>
-                                                                <td>{{ $userTiket->jenis_kelamin }}</td>
-                                                                <td>{{ $userTiket->alamat }}</td>
-                                                                <td>{{ $userTiket->no_hp }}</td>
-                                                                <td>{{ $userTiket->tanggal_kedatangan }}</td>
-                                                                <td>{{ $userTiket->harga }}</td>
+                                                                <td>{{ $tiket->id }}</td>
+                                                                <td>{{ $tiket->nama }}</td>
+                                                                <td>{{ $tiket->email }}</td>
+                                                                <td>{{ $tiket->jenis_kelamin }}</td>
+                                                                <td>{{ $tiket->alamat }}</td>
+                                                                <td>{{ $tiket->no_hp }}</td>
+                                                                <td>{{ $tiket->tanggal_kedatangan }}</td>
+                                                                <td>{{ $tiket->harga }}</td>
                                                                 <td>
-                                                                    @if ($userTiket->status == 'Lunas')
+                                                                    @if ($tiket->status == 'Lunas')
                                                                         <label class="badge badge-success">Lunas</label>
-                                                                    @elseif ($userTiket->status == 'Bayar Ditempat')
+                                                                    @elseif ($tiket->status == 'Bayar Ditempat')
                                                                         <label class="badge badge-warning">Bayar
                                                                             Ditempat</label>
                                                                     @endif
