@@ -50,7 +50,7 @@ Route::middleware(['guest'])->group(function () {
     })->name('password.request');
 });
 
-Route::middleware(['auth', 'verified'])->group(function () {
+Route::middleware(['auth', 'verified', 'admin'])->group(function () {
     Route::get('/home_admin', [HomeAdminController::class, 'index'])->name('home_admin');
     Route::get('/batal_admin', [BatalAdminController::class, 'index'])->name('batal_admin');
     Route::delete('/batal_admin/{id}', [BatalAdminController::class, 'destroy'])->name('batal_admin.destroy');
@@ -59,12 +59,6 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/bayar_ditempat_admin', [BayarDitempatAdminController::class, 'index'])->name('bayar_ditempat_admin');
     Route::get('/lunas_admin', [LunasAdminController::class, 'index'])->name('lunas_admin');
 });
-
-// Route untuk menangani kesalahan 419 jika pengguna mengubah URL ke rute admin
-Route::fallback(function () {
-    abort(419, 'Unauthorized');
-});
-
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');

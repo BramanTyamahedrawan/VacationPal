@@ -23,7 +23,7 @@
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="{{ route('detail.index') }}">
+            <a class="nav-link" href="{{ route('detail_admin.index') }}">
                 <span class="menu-icon">
                     <i class="mdi mdi-dialpad"></i>
                 </span>
