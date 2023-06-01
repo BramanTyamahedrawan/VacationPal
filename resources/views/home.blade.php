@@ -10,7 +10,7 @@
                         <div class="container">
                             <div class="d-flex justify-content-center mb-1">
                                 <div class="col-lg-6">
-                                    <h1 class="display-1 mb-4 animated slideInDown" style="color:#0077be;">&nbsp;Pantai 3 Warna</h1>
+                                    <h1 class="display-1 mb-4 animated slideInDown" style="color:#11009E;">&nbsp;Pantai 3 Warna</h1>
                                 </div>
                             </div>
                         </div>
@@ -22,19 +22,7 @@
                         <div class="container">
                             <div class="d-flex justify-content-lg-center mb-1">
                                 <div class="col-lg-6">
-                                    <h1 class="display-1 mb-4 animated slideInDown" style="color:#0077be;">&nbsp;Pantai 3 Warna</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('user_template/img/carousel-tiga.jpg') }}" alt="Image">
-                    <div class="carousel-caption">
-                        <div class="container">
-                            <div class="d-flex justify-content-lg-center mb-1">
-                                <div class="col-lg-6">
-                                    <h1 class="display-1 mb-4 animated slideInDown"style="color:#0077be;">&nbsp;Pantai 3 Warna</h1>
+                                    <h1 class="display-1 mb-4 animated slideInDown" style="color:#11009E;">&nbsp;Pantai 3 Warna</h1>
                                 </div>
                             </div>
                         </div>
@@ -46,7 +34,7 @@
                         <div class="container">
                             <div class="d-flex justify-content-center mb-1">
                                 <div class="col-lg-6">
-                                    <h1 class="display-1 mb-4 animated slideInDown"style="color:#0077be;">&nbsp;Pantai 3 Warna</h1>
+                                    <h1 class="display-1 mb-4 animated slideInDown"style="color:#11009E;">&nbsp;Pantai 3 Warna</h1>
                                 </div>
                             </div>
                         </div>
