@@ -18,6 +18,7 @@
 <!-- Custom js for this page -->
 <script src="{{ asset('admin_template/template/assets/js/dashboard.js') }}"></script>
 <!-- End custom js for this page -->
+<script src="{{ asset('detail_tiket/script.js') }}"></script>
 </body>
 
 </html>
