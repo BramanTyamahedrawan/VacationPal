@@ -18,7 +18,6 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h4 class="card-title">Booking Tiket</h4>
-                                        </p>
                                         <div class="table-responsive">
                                             <table class="table table-bordered" style="color: rgb(233, 232, 232)">
                                                 <thead>
@@ -38,7 +37,8 @@
                                                 <tbody>
                                                     @isset($userTikets)
                                                         @foreach ($userTikets as $userTiket)
-                                                            <tr>
+                                                            <tr
+                                                                onclick="window.location='{{ route('detail_admin.show', ['id' => $userTiket->id]) }}'">
                                                                 <td>{{ $userTiket->id }}</td>
                                                                 <td>{{ $userTiket->nama }}</td>
                                                                 <td>{{ $userTiket->email }}</td>

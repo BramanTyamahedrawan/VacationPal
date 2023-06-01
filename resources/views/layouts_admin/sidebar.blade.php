@@ -23,6 +23,14 @@
             </a>
         </li>
         <li class="nav-item menu-items">
+            <a class="nav-link" href="{{ route('detail.index') }}">
+                <span class="menu-icon">
+                    <i class="mdi mdi-dialpad"></i>
+                </span>
+                <span class="menu-title">Detail Tiket</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
             <a class="nav-link" href="{{ route('lunas_admin') }}">
                 <span class="menu-icon">
                     <i class="mdi mdi-playlist-play"></i>
