@@ -10,7 +10,7 @@ class DetailAdminController extends Controller
 {
     public function index()
     {
-        return redirect()->route('admin_views.home_admin');
+        return redirect()->route('home_admin');
     }
 
     public function show($id)
