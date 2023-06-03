@@ -60,8 +60,9 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
     Route::get('/lunas_admin', [LunasAdminController::class, 'index'])->name('lunas_admin');
 });
 
-Route::middleware(['auth', 'verified'])->group(function () {
-    Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware('auth', 'verified');
+
+Route::middleware(['auth', 'verified', 'user'])->group(function () {
     Route::get('/pesan_tiket', [PesanTiketController::class, 'index'])->name('pesan_tiket');
     Route::post('/pesan_tiket', [PesanTiketController::class, 'store'])->name('pesan_tiket.store');
     Route::get('/tiket', [TiketController::class, 'index'])->name('tiket');
