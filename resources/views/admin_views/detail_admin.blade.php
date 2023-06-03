@@ -77,6 +77,10 @@
                                                             @endif
                                                         </td>
                                                     </tr>
+                                                    <tr>
+                                                        <td>QR Code</td>
+                                                        <td> {!! DNS2D::getBarcodeHTML(json_encode($tiket, JSON_PRETTY_PRINT), 'QRCODE', 3, 3, 'white') !!}</td>
+                                                    </tr>
                                                 </tbody>
 
                                             </table>
