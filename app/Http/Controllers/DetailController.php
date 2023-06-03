@@ -15,6 +15,8 @@ class DetailController extends Controller
     public function show($id)
     {
         $tiket = User_tiket::findOrFail($id);
+        $tiket->makeHidden(['created_at', 'updated_at']);
+
         return view('detail', ['tiket' => $tiket]);
     }
 }
