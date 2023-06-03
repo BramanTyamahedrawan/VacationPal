@@ -19,10 +19,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if (Gate::allows('home_admin')) {
-            return view('admin_views.home_admin');
-        } else {
+        if (Gate::allows('admin')) {
+            return redirect()->route('home_admin');
+        } else if (Gate::allows('user')) {
             return view('home');
+        } else {
+            (abort(404, 'Page Not Found'));
         }
     }
 }
