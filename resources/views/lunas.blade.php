@@ -16,26 +16,36 @@
                                 <th> No </th>
                                 <th> Nama Lengkap </th>
                                 <th> Alamat Email </th>
-                                <th> Jenis Kelamin </th>
+                                {{-- <th> Jenis Kelamin </th>
                                 <th> Alamat Lengkap </th>
-                                <th> No. Telepon </th>
+                                <th> No. Telepon </th> --}}
                                 <th> Tanggal Kedatangan </th>
+                                <th> Tiket </th>
                                 <th> Harga </th>
                                 <th> Status </th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td> 1 </td>
-                                <td> John Richards </td>
-                                <td> johnrichard@gmail.com </td>
-                                <td> L </td>
-                                <td> Surabaya </td>
-                                <td> 08123456789 </td>
-                                <td></td>
-                                <td></td>
-                                <td><label class="badge badge-success">Lunas</label></td>
-                            </tr>
+                            @foreach ($userTikets as $userTiket)
+                                <tr onclick="window.location='{{ route('detail.show', ['id' => $userTiket->id]) }}'">
+                                    <td>{{ $userTiket->id }}</td>
+                                    <td>{{ $userTiket->nama }}</td>
+                                    <td>{{ $userTiket->email }}</td>
+                                    {{-- <td>{{ $userTiket->jenis_kelamin }}</td>
+                                    <td>{{ $userTiket->alamat }}</td>
+                                    <td>{{ $userTiket->no_hp }}</td> --}}
+                                    <td>{{ $userTiket->tanggal_kedatangan }}</td>
+                                    <td>{{ $userTiket->jumlah_tiket }}</td>
+                                    <td>{{ $userTiket->harga }}</td>
+                                    <td>
+                                        @if ($userTiket->status == 'Lunas')
+                                            <label class="badge badge-success">Lunas</label>
+                                        @elseif ($userTiket->status == 'Bayar Ditempat')
+                                            <label class="badge badge-warning">Bayar Ditempat</label>
+                                        @endif
+                                    </td>
+                                </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
