@@ -18,6 +18,7 @@
                                 <th>Alamat </th>
                                 <th>No. Telepon</th>
                                 <th>Tgl Kedatangan</th>
+                                <th>Jumlah Tiket</th>
                                 <th>Harga</th>
                                 <th>Status</th>
                                 <th>Batal</th>
@@ -33,6 +34,7 @@
                                     <td>{{ $userTiket->alamat }}</td>
                                     <td>{{ $userTiket->no_hp }}</td>
                                     <td>{{ $userTiket->tanggal_kedatangan }}</td>
+                                    <td>{{ $userTiket->jumlah_tiket }}</td>
                                     <td>{{ $userTiket->harga }}</td>
                                     <td>
                                         @if ($userTiket->status == 'Lunas')
