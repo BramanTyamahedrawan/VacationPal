@@ -202,6 +202,8 @@ return [
         // QR Code Providers
         Milon\Barcode\BarcodeServiceProvider::class,
 
+        // Pdf Providers
+        Barryvdh\DomPDF\ServiceProvider::class,
     ],
 
     /*
@@ -217,8 +219,11 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        // QR Code Aliases
         'DNS1D' => Milon\Barcode\Facades\DNS1DFacade::class,
         'DNS2D' => Milon\Barcode\Facades\DNS2DFacade::class,
+        // PDF Aliases
+        'PDF' => Barryvdh\DomPDF\Facade::class,
     ])->toArray(),
 
 ];
