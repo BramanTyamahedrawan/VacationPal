@@ -32,6 +32,13 @@
                                                 <form class="forms-sample" method="POST"
                                                     action="{{ route('pesan_tiket.store') }}">
                                                     @csrf
+
+                                                    @if (session('error'))
+                                                        <div class="alert alert-danger">
+                                                            {{ session('error') }}
+                                                        </div>
+                                                    @endif
+
                                                     <div class="form-group">
                                                         <label for="exampleInputName1">Nama Lengkap</label>
                                                         <input type="text" class="form-control" id="exampleInputName1"

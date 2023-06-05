@@ -25,10 +25,11 @@
                                                         <th>No</th>
                                                         <th> Nama Lengkap </th>
                                                         <th> Email </th>
-                                                        <th> Jenis Kelamin </th>
+                                                        {{-- <th> Jenis Kelamin </th>
                                                         <th> Alamat </th>
-                                                        <th> No. Telepon </th>
+                                                        <th> No. Telepon </th> --}}
                                                         <th> Tgl Kedatangan </th>
+                                                        <th> Tiket </th>
                                                         <th> Harga </th>
                                                         <th> Status </th>
                                                         <th>Batal</th>
@@ -42,10 +43,11 @@
                                                                 <td>{{ $userTiket->id }}</td>
                                                                 <td>{{ $userTiket->nama }}</td>
                                                                 <td>{{ $userTiket->email }}</td>
-                                                                <td>{{ $userTiket->jenis_kelamin }}</td>
+                                                                {{-- <td>{{ $userTiket->jenis_kelamin }}</td>
                                                                 <td>{{ $userTiket->alamat }}</td>
-                                                                <td>{{ $userTiket->no_hp }}</td>
+                                                                <td>{{ $userTiket->no_hp }}</td> --}}
                                                                 <td>{{ $userTiket->tanggal_kedatangan }}</td>
+                                                                <td>{{ $userTiket->jumlah_tiket }}</td>
                                                                 <td>{{ $userTiket->harga }}</td>
                                                                 <td>
                                                                     @if ($userTiket->status == 'Lunas')

@@ -17,6 +17,7 @@ class User_tiket extends Model
         'alamat',
         'no_hp',
         'tanggal_kedatangan',
+        'jumlah_tiket',
         'harga',
         'status',
         'batal',
