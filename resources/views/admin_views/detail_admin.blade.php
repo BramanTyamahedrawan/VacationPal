@@ -23,11 +23,11 @@
                                         <h4 class="card-title">Booking Tiket</h4>
                                         </p>
                                         <div class="table-responsive">
-                                            <table class="table table-stripped">
+                                            <table class="table table-stripped" style="color: rgb(233, 232, 232)">
                                                 <thead>
                                                     <tr>
-                                                        <th>Detail Tiket</th>
-                                                        <th>Data Tiket</th>
+                                                        <th style="color:aqua">Detail Tiket</th>
+                                                        <th style="color:aqua">Data Tiket</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -61,11 +61,11 @@
                                                     </tr>
                                                     <tr>
                                                         <td>Jumlah Tiket</td>
-                                                        <td>: <span id="jumlahTiket"></span></td>
+                                                        <td>: {{ $tiket->jumlah_tiket }}</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Harga</td>
-                                                        <td id="harga">{{ $tiket->harga }}</td>
+                                                        <td>: {{ $tiket->harga }}</td>
                                                     </tr>
                                                     <tr>
                                                         <td>Status</td>
