@@ -25,6 +25,16 @@
                     aria-labelledby="profileDropdown">
                     <h6 class="p-3 mb-0">Profile</h6>
                     <div class="dropdown-divider"></div>
+                    <a class="dropdown-item preview-item" href="{{ route('home') }}">
+                        <div class="preview-thumbnail">
+                            <div class="preview-icon bg-dark rounded-circle">
+                                <i class="mdi mdi-home text-info"></i>
+                            </div>
+                        </div>
+                        <div class="preview-item-content">
+                            <p class="preview-subject mb-1">Home</p>
+                        </div>
+                    </a>
                     <a class="dropdown-item preview-item"
                         onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
                         <div class="preview-thumbnail">
@@ -38,16 +48,6 @@
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST">
                         @csrf</form>
-                    <a class="dropdown-item preview-item" href="{{ route('home') }}">
-                        <div class="preview-thumbnail">
-                            <div class="preview-icon bg-dark rounded-circle">
-                                <i class="mdi mdi-home text-info"></i>
-                            </div>
-                        </div>
-                        <div class="preview-item-content">
-                            <p class="preview-subject mb-1">Home</p>
-                        </div>
-                    </a>
                     <div class="dropdown-divider"></div>
                 </div>
             </li>
