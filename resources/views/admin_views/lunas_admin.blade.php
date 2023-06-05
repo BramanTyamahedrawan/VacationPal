@@ -27,69 +27,27 @@
                                                         <th> No </th>
                                                         <th> Nama Lengkap </th>
                                                         <th> Email </th>
-                                                        <th> Jenis Kelamin </th>
+                                                        {{-- <th> Jenis Kelamin </th>
                                                         <th> Alamat </th>
-                                                        <th> No. Telepon </th>
+                                                        <th> No. Telepon </th> --}}
                                                         <th> Tgl Kedatangan </th>
+                                                        <th> Tiket </th>
                                                         <th> Harga </th>
                                                         <th> Status </th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    {{-- <tr>
-                                                        <td> 3 </td>
-                                                        <td> John Richards </td>
-                                                        <td> johnrichard@gmail.com </td>
-                                                        <td> L </td>
-                                                        <td> Surabaya </td>
-                                                        <td> 08123456789 </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td><label class="badge badge-success">Lunas</label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td> 4 </td>
-                                                        <td> Peter Meggik </td>
-                                                        <td> petermeggik@gmail.com </td>
-                                                        <td> L </td>
-                                                        <td> Malang </td>
-                                                        <td> 08123456789 </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td><label class="badge badge-success">Lunas</label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td> 6 </td>
-                                                        <td> John Doe </td>
-                                                        <td> johndoe@gmail.com </td>
-                                                        <td> L </td>
-                                                        <td> Jakarta </td>
-                                                        <td> 08123456789 </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td><label class="badge badge-success">Lunas</label></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td> 7 </td>
-                                                        <td> Henry Tom </td>
-                                                        <td> henrytom@gmail.com </td>
-                                                        <td> L </td>
-                                                        <td> Bandung </td>
-                                                        <td> 08123456789 </td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td><label class="badge badge-success">Lunas</label></td>
-                                                    </tr> --}}
                                                     @isset($userTiket)
                                                         @foreach ($userTiket as $tiket)
                                                             <tr>
                                                                 <td>{{ $tiket->id }}</td>
                                                                 <td>{{ $tiket->nama }}</td>
                                                                 <td>{{ $tiket->email }}</td>
-                                                                <td>{{ $tiket->jenis_kelamin }}</td>
+                                                                {{-- <td>{{ $tiket->jenis_kelamin }}</td>
                                                                 <td>{{ $tiket->alamat }}</td>
-                                                                <td>{{ $tiket->no_hp }}</td>
+                                                                <td>{{ $tiket->no_hp }}</td> --}}
                                                                 <td>{{ $tiket->tanggal_kedatangan }}</td>
+                                                                <td>{{ $tiket->jumlah_tiket }} </td>
                                                                 <td>{{ $tiket->harga }}</td>
                                                                 <td>
                                                                     @if ($tiket->status == 'Lunas')
