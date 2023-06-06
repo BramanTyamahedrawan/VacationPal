@@ -10,16 +10,12 @@
                             <div class="col-12 grid-margin stretch-card">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h3 class="card-title text-center">Bayar Via E-Wallet</h3><br>
+                                        <h3 class="card-title text-center">Bayar Tiket</h3><br>
                                         <div class="d-flex">
-                                            <button class="btn btn-outline-info mr-2 col">
-                                                <img src="{{ asset('admin_template/template/assets/images/carousel/id_dana_ewallet.png') }}"
-                                                    alt="">
-                                            </button>
-                                            <button class="btn btn-outline-success mr-2 col">
-                                                <img src="{{ asset('admin_template/template/assets/images/carousel/id_linkaja_ewallet.png') }}"
-                                                    alt="">
-                                            </button>
+                                            <form action="{{ route('pembayaran.finish') }}" method="POST">
+                                                @csrf
+                                                <button type="submit" class="btn btn-primary">Bayar Sekarang</button>
+                                            </form>
                                         </div>
                                         <div class="card">
                                             <div class="card-body">

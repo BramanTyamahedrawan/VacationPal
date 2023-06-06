@@ -67,6 +67,9 @@ Route::middleware(['auth', 'verified', 'user'])->group(function () {
     Route::post('/pesan_tiket', [PesanTiketController::class, 'store'])->name('pesan_tiket.store');
     Route::get('/tiket', [TiketController::class, 'index'])->name('tiket');
     Route::get('/pembayaran', [PembayaranController::class, 'index'])->name('pembayaran');
+    Route::post('/pembayaran/finish', [PembayaranController::class, 'finish'])->name('pembayaran.finish');
+    Route::post('/pembayaran/notification', [PembayaranController::class, 'notification'])->name('pembayaran.notification');
+    Route::get('/pembayaran/unfinish', [PembayaranController::class, 'unfinish'])->name('pembayaran.unfinish');
     Route::get('/lunas', [LunasController::class, 'index'])->name('lunas');
     Route::get('/bayar_ditempat', [BayarDitempatController::class, 'index'])->name('bayar_ditempat');
     Route::get('/batal', [BatalController::class, 'index'])->name('batal');

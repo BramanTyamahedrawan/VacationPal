@@ -69,6 +69,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    <a href="{{ route('pembayaran') }}" class="btn btn-success">Bayar Tiket</a>
                 </div>
             </div>
         </div>
