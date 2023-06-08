@@ -11,11 +11,49 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <h3 class="card-title text-center">Bayar Tiket</h3><br>
-                                        <div class="d-flex">
-                                            <form action="{{ route('pembayaran.finish') }}" method="POST">
-                                                @csrf
-                                                <button type="submit" class="btn btn-primary">Bayar Sekarang</button>
-                                            </form>
+                                        <a href="{{ route('tiket') }}"><button type="submit"
+                                                class="btn btn-danger">Kembali</button></a>
+                                        <div class="table-responsive">
+                                            <table class="table table-stripped" style="color: rgb(233, 232, 232)">
+                                                <tr>
+                                                    <td>Nama</td>
+                                                    <td>{{ $order->nama }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Email</td>
+                                                    <td>{{ $order->email }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jenis Kelamin</td>
+                                                    <td>{{ $order->jenis_kelamin }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Alamat</td>
+                                                    <td>{{ $order->alamat }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>No. Telepon</td>
+                                                    <td>{{ $order->no_hp }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tanggal Kedatangan</td>
+                                                    <td>{{ $order->tanggal_kedatangan }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jumlah Tiket</td>
+                                                    <td>{{ $order->jumlah_tiket }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Status</td>
+                                                    <td>{{ $order->status }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Harga</td>
+                                                    <td>{{ $order->harga }}</td>
+                                                </tr>
+                                            </table>
+                                            <button type="submit" class="btn btn-success" id="pay-button">Bayar
+                                                Sekarang</button>
                                         </div>
                                         <div class="card">
                                             <div class="card-body">
