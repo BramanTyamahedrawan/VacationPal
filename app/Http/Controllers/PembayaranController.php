@@ -15,7 +15,7 @@ class PembayaranController extends Controller
 {
     public function index()
     {
-        Config::$serverKey = 'SB-Mid-server-RkTdLvv1U_kgwR8xGJ1DRGhD';
+        Config::$serverKey = config('midtrans.server_key');
         Config::$isProduction = false;
         Config::$isSanitized = true;
         Config::$is3ds = true;
