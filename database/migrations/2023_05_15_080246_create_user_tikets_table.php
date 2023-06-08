@@ -27,7 +27,7 @@ return new class extends Migration
         Schema::table('user_tikets', function (Blueprint $table) {
             $table->enum('status', ['Bayar Ditempat', 'Lunas', 'Dibatalkan'])->default('Bayar Ditempat')->after('harga');
             $table->string('batal')->nullable()->after('status')->default('Batalkan');
-            // $table->foreignId('email')->constrained('users')->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('email')->constrained('users')->onUpdate('cascade')->onDelete('cascade');
         });
     }
 
