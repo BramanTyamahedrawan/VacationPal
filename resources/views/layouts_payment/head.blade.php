@@ -5,6 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src="https://app.sandbox.midtrans.com/snap/snap.js"
+        data-client-key="{{ config('midtrans.client_key') }}"></script>
+    <!-- Note: replace with src="https://app.midtrans.com/snap/snap.js" for Production environment -->
     <title>Pantai 3 Warna</title>
     <!-- plugins:css -->
     <link rel="stylesheet"
