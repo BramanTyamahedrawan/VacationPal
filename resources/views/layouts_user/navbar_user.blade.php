@@ -26,11 +26,11 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                             aria-labelledby="profileDropdown">
-                            <a class="dropdown-item preview-item">
+                            {{-- <a class="dropdown-item preview-item">
                                 <div class="preview-item-content">
                                     <p class="preview-subject mb-1">Settings</p>
                                 </div>
-                            </a>
+                            </a> --}}
                             <div class="dropdown-divider"></div>
                             <a href="#" class="dropdown-item preview-item"
                                 onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
