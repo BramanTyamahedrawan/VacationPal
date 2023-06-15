@@ -31,7 +31,7 @@
                                     <p class="preview-subject mb-1">Settings</p>
                                 </div>
                             </a> --}}
-                            <div class="dropdown-divider"></div>
+                            <!-- <div class="dropdown-divider"></div> -->
                             <a href="#" class="dropdown-item preview-item"
                                 onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
                                 <div class="preview-item-content">
