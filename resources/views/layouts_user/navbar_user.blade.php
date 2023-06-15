@@ -1,9 +1,9 @@
 <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
     <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
         <div class="col-lg-6 px-5 text-start">
-            <small class="dark link-dark"><i class="fa fa-map-marker-alt text-secondary me-2"></i>Pantai 3 Warna
+            <small class="dark link-light"><i class="fa fa-map-marker-alt text-secondary me-2"></i>Pantai 3 Warna
                 Malang</small>
-            <small class="ms-4 dark link-dark"><i class="fa fa-clock text-secondary me-2"></i>07.00 - 16.00</small>
+            <small class="ms-4 dark link-light"><i class="fa fa-clock text-secondary me-2"></i>07.00 - 18.00 (Close on Thursday)</small>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">

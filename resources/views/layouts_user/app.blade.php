@@ -14,9 +14,15 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&family=Cairo:wght@200&family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,500&family=Cairo:wght@200&family=Raleway:ital,wght@1,800&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -48,6 +54,12 @@
             padding-top: 8px;
             border-radius: 50%;
             size: 18px;
+        }
+
+        #titleslide {
+            font-family: 'Barlow', sans-serif;
+            font-family: 'Cairo', sans-serif;
+            font-family: 'Raleway', sans-serif;
         }
     </style>
 </head>
@@ -89,8 +101,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" id="myBtn" class="btn btn-lg btn-primary btn-lg-square rounded-circle"><i
-            class="bi bi-arrow-up"></i></a>
+    <a href="#" id="myBtn" class="btn btn-lg btn-primary btn-lg-square rounded-circle"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
