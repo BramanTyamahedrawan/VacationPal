@@ -44,14 +44,14 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button>
+            </button> -->
         </div>
     </div>
 @endsection
@@ -87,7 +87,7 @@
                                 <p class="mb-0">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5744.901536727792!2d112.67663673296389!3d-8.439488875114831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd601147042ed43%3A0x3d8b26de55357956!2sPantai%20Tiga%20Warna!5e0!3m2!1sid!2sid!4v1683266958659!5m2!1sid!2sid"
-                                        width="580" height="400" style="border:0; position:center;"
+                                        width="580" height="394" style="border:0; position:center;"
                                         allowfullscreen=""loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                                     </iframe>
                                 </p>
@@ -107,7 +107,7 @@
                                 <p>
                                     Pantai Tiga Warna terletak di Kecamatan Sumber Manjing Wetan, Kabupaten
                                     Malang, Jawa Timur. Pantai ini memiliki gradasi yang terdiri dari tiga warna, yaitu
-                                    biru, hijau, dan coklat kemerahan.
+                                    Warna biru pada bagian terdalam, hijau pada bagian terdangkal, dan cokelat kemerahan pada pasir pantai. 
                                 </p>
                                 <p>Harga tiket masuk Pantai 3 Warna adalah Rp 10 ribu per orang. Pengunjung diwajibkan
                                     menyewa pemandu wisata sebesar Rp 150 ribu untuk setiap rombongan yang berjumlah 5
@@ -215,9 +215,10 @@
                             <div class="row g-4">
                                 <div class="col-md-6">
                                     <h3 class="mb-4">Pemesanan Tiket</h3>
-                                    <p class="mb-4">Fitur ini memungkinkan pengguna untuk memilih tipe tiket,
-                                        jumlah tiket yang ingin dibeli, serta tanggal dan waktu kunjungan ke pantai 3
-                                        warna.</p>
+                                    <p class="mb-4">Fitur ini memungkinkan pengguna untuk melakukan pemesanan tiket
+                                        secara online. Pengguna dapat melakukan pemesanan tiket dengan mudah dan
+                                        cepat, dengan cara mengisi form pemesanan tiket yang telah disediakan.</p>
+                                    </p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Terpercaya</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Aman</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Anti Ribet</p>

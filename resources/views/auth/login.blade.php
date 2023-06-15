@@ -37,17 +37,17 @@
                                 </div>
 
                                 <div class="form-group d-flex align-items-center justify-content-between">
-                                    <div class="form-check">
+                                    <!-- <div class="form-check">
                                         <label class="form-check-label">
                                             <input type="checkbox" class="form-check-input" name="remember" id="remember"
                                                 {{ old('remember') ? 'checked' : '' }}>
                                             {{ __('Remember Me') }}
                                         </label>
-                                    </div>
-                                    @if (Route::has('password.request'))
+                                    </div> -->
+                                    <!-- @if (Route::has('password.request'))
                                         <a href="{{ route('password.request') }}"
                                             class="forgot-pass">{{ __('Lupa Password') }}</a>
-                                    @endif
+                                    @endif -->
                                 </div>
 
                                 <div class="text-center">
