@@ -10,7 +10,8 @@
                         <div class="container">
                             <div class="d-flex justify-content-center mb-1">
                                 <div class="col-lg-6">
-                                    <h1 class="display-1 mb-4 animated slideInDown" style="color:#11009E;">&nbsp;Pantai 3 Warna</h1>
+                                    <h1 class="display-1 mb-4 animated slideInDown" style="color:#11009E;">&nbsp;Pantai 3
+                                        Warna</h1>
                                 </div>
                             </div>
                         </div>
@@ -22,7 +23,8 @@
                         <div class="container">
                             <div class="d-flex justify-content-lg-center mb-1">
                                 <div class="col-lg-6">
-                                    <h1 class="display-1 mb-4 animated slideInDown" style="color:#11009E;">&nbsp;Pantai 3 Warna</h1>
+                                    <h1 class="display-1 mb-4 animated slideInDown" style="color:#11009E;">&nbsp;Pantai 3
+                                        Warna</h1>
                                 </div>
                             </div>
                         </div>
@@ -34,7 +36,8 @@
                         <div class="container">
                             <div class="d-flex justify-content-center mb-1">
                                 <div class="col-lg-6">
-                                    <h1 class="display-1 mb-4 animated slideInDown"style="color:#11009E;">&nbsp;Pantai 3 Warna</h1>
+                                    <h1 class="display-1 mb-4 animated slideInDown"style="color:#11009E;">&nbsp;Pantai 3
+                                        Warna</h1>
                                 </div>
                             </div>
                         </div>
@@ -77,9 +80,6 @@
                                 <button class="nav-link fw-semi-bold" id="nav-mission-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-mission" type="button" role="tab" aria-controls="nav-mission"
                                     aria-selected="false">Lokasi</button>
-                                {{-- <button class="nav-link fw-semi-bold" id="nav-vision-tab" data-bs-toggle="tab"
-                                    data-bs-target="#nav-vision" type="button" role="tab" aria-controls="nav-vision"
-                                    aria-selected="false">Harga</button> --}}
                             </div>
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
