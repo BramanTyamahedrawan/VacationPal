@@ -5,25 +5,26 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{{ asset('user_template/img/carousel-pertama.jpg') }}" alt="Image">
+                    <img class="w-100" src="{{ asset('user_template/img/carousel-pertama.jpg') }}" alt="Image" style="filter: brightness(75%);">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="d-flex justify-content-center mb-1">
                                 <div class="col-lg-6">
-                                    <h1 class="display-1 mb-4 animated slideInDown" style="color:#11009E;">&nbsp;Pantai 3
+                                    <h1 id= "titleslide" class="display-1 mb-4 animated slideInDown" style="color:white;">&nbsp;Pantai 3
                                         Warna</h1>
+                                        <!-- <p id= "descslide" class="display-3 mb-2 animated slideInDown">baysdbacj</p> -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('user_template/img/carousel-kedua.jpg') }}" alt="Image">
+                    <img class="w-100" src="{{ asset('user_template/img/carousel-kedua.jpg') }}" alt="Image" style="filter: brightness(75%);">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="d-flex justify-content-lg-center mb-1">
                                 <div class="col-lg-6">
-                                    <h1 class="display-1 mb-4 animated slideInDown" style="color:#11009E;">&nbsp;Pantai 3
+                                    <h1 id= "titleslide" class="display-1 mb-4 animated slideInDown" style="color:white;">&nbsp;Pantai 3
                                         Warna</h1>
                                 </div>
                             </div>
@@ -31,12 +32,12 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('user_template/img/carousel-empat.jpg') }}" alt="Image">
+                    <img class="w-100" src="{{ asset('user_template/img/carousel-empat.jpg') }}" alt="Image" style="filter: brightness(75%);">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="d-flex justify-content-center mb-1">
                                 <div class="col-lg-6">
-                                    <h1 class="display-1 mb-4 animated slideInDown"style="color:#11009E;">&nbsp;Pantai 3
+                                    <h1 id= "titleslide" class="display-1 mb-4 animated slideInDown"style="color:white;">&nbsp;Pantai 3
                                         Warna</h1>
                                 </div>
                             </div>
@@ -110,7 +111,7 @@
                                     Warna biru pada bagian terdalam, hijau pada bagian terdangkal, dan cokelat kemerahan pada pasir pantai. 
                                 </p>
                                 <p>Harga tiket masuk Pantai 3 Warna adalah Rp 10 ribu per orang. Pengunjung diwajibkan
-                                    menyewa pemandu wisata sebesar Rp 150 ribu untuk setiap rombongan yang berjumlah 5
+                                    menyewa pemandu wisata sebesar Rp 100 ribu untuk setiap rombongan yang berjumlah 10
                                     orang.
                                 </p>
                                 {{-- <p>
