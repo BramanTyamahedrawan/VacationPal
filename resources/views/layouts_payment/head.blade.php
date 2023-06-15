@@ -29,6 +29,22 @@
     <link rel="stylesheet" href="{{ asset('admin_template/template/assets/css/style.css') }}">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="{{ asset('admin_template/template/assets/images/favicon.png') }}" />
+
+    <style>
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background: #2d2e37;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
