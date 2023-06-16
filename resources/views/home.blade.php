@@ -224,6 +224,9 @@
                                     <p><i class="fa fa-check text-primary me-3"></i>Aman</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Anti Ribet</p>
                                 </div>
+                                <div class="col-lg-6 wow fadeInUp" style="display:flex; align-items:center;">
+                                    <img class="img-fluid rounded" style="float:right;" src="{{ asset('user_template/img/3warna.jpeg') }}" style="margin-left: 10px;">
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="tab-pane-2">
@@ -238,6 +241,9 @@
                                     <p><i class="fa fa-check text-primary me-3"></i>Aman</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Anti Ribet</p>
                                 </div>
+                                <div class="col-lg-6 wow fadeInUp" style="display:flex; align-items:center;">
+                                    <img class="img-fluid rounded" style="float:right;" src="{{ asset('user_template/img/snorkling.jpeg') }}" style="margin-left: 10px;">
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="tab-pane-3">
@@ -251,6 +257,9 @@
                                     <p><i class="fa fa-check text-primary me-3"></i>Terpercaya</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Aman</p>
                                     <p><i class="fa fa-check text-primary me-3"></i>Anti Ribet</p>
+                                </div>
+                                <div class="col-lg-6 wow fadeInUp" style="display:flex; align-items:center;">
+                                    <img class="img-fluid rounded" style="float:right;" src="{{ asset('user_template/img/coral.jpeg') }}" style="margin-left: 10px;">
                                 </div>
                             </div>
                         </div>
