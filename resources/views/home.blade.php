@@ -5,7 +5,7 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{{ asset('user_template/img/carousel-pertama.jpg') }}" alt="Image" style="filter: brightness(75%);">
+                    <img class="w-100" src="{{ asset('user_template/img/carousel-pertama.jpg') }}" alt="Image" style="filter: brightness(70%);">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="d-flex justify-content-center mb-1">
@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('user_template/img/carousel-kedua.jpg') }}" alt="Image" style="filter: brightness(75%);">
+                    <img class="w-100" src="{{ asset('user_template/img/carousel-kedua.jpg') }}" alt="Image" style="filter: brightness(70%);">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="d-flex justify-content-lg-center mb-1">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('user_template/img/carousel-empat.jpg') }}" alt="Image" style="filter: brightness(75%);">
+                    <img class="w-100" src="{{ asset('user_template/img/carousel-empat.jpg') }}" alt="Image" style="filter: brightness(70%);">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="d-flex justify-content-center mb-1">

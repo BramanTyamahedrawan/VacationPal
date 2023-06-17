@@ -1,12 +1,12 @@
 <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
-    <div class="top-bar row gx-0 align-items-center d-none d-lg-flex">
+    <div class="top-bar row gx-0 align-items-center d-none d-lg-flex" style="background: rgba(255, 255, 255, 0.5);">
         <div class="col-lg-6 px-5 text-start">
-            <small class="dark link-light"><i class="fa fa-map-marker-alt text-secondary me-2"></i>Pantai 3 Warna
+            <small class="dark link-dark fw-bold"><i class="fa fa-map-marker-alt text-secondary me-2"></i>Pantai 3 Warna
                 Malang</small>
-            <small class="ms-4 dark link-light"><i class="fa fa-clock text-secondary me-2"></i>07.00 - 18.00 (Close on Thursday)</small>
+            <small class="ms-4 dark link-dark fw-bold"><i class="fa fa-clock text-secondary me-2"></i>07.00 - 18.00 (Close on Thursday)</small>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+    <nav class="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s" style="background: rgba(255, 255, 255, 0.5);">
         <a href="#" onclick="location.reload()" class="navbar-brand ms-4 ms-lg-0">
             <h1 class="display-5 text-primary m-0 rounded">VacationPal
             </h1>
@@ -16,9 +16,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="#" onclick="location.reload()" class="nav-item nav-link active">Home</a>
-                <a class="nav-link" href="{{ route('pesan_tiket') }}">Pesan Tiket</a>
-                <a class="nav-link" href="{{ route('tiket') }}">Tiket</a>
+                <a href="#" onclick="location.reload()" class="nav-item nav-link active fw-bold">Home</a>
+                <a class="nav-link fw-bold" href="{{ route('pesan_tiket') }}">Pesan Tiket</a>
+                <a class="nav-link fw-bold" href="{{ route('tiket') }}">Tiket</a>
                 @if (Auth::check())
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link">
