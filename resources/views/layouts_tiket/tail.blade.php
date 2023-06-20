@@ -22,6 +22,8 @@
 <script src="{{ asset('admin_template/template/assets/js/datepicker.js') }}"></script>
 <script src="{{ asset('admin_template/template/assets/js/jquery-ui.js') }}"></script>
 <script src="{{ asset('detail_tiket/script.js') }}"></script>
+<script src="{{ asset('pesan tiket/sum.js') }}"></script>
+<script src="{{ asset('pesan tiket/date.js') }}"></script>
 </body>
 
 </html>
