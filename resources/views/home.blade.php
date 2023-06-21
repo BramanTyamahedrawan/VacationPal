@@ -5,26 +5,30 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="{{ asset('user_template/img/carousel-pertama.jpg') }}" alt="Image" style="filter: brightness(70%);">
+                    <img class="w-100" src="{{ asset('user_template/img/carousel-pertama.jpg') }}" alt="Image"
+                        style="filter: brightness(70%);">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="d-flex justify-content-center mb-1">
                                 <div class="col-lg-6">
-                                    <h1 id= "titleslide" class="display-1 mb-4 animated slideInDown" style="color:white;">&nbsp;Pantai 3
+                                    <h1 id="titleslide" class="display-1 mb-4 animated slideInDown" style="color:white;">
+                                        &nbsp;Pantai 3
                                         Warna</h1>
-                                        <!-- <p id= "descslide" class="display-3 mb-2 animated slideInDown">baysdbacj</p> -->
+                                    <!-- <p id= "descslide" class="display-3 mb-2 animated slideInDown">baysdbacj</p> -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('user_template/img/carousel-kedua.jpg') }}" alt="Image" style="filter: brightness(70%);">
+                    <img class="w-100" src="{{ asset('user_template/img/carousel-kedua.jpg') }}" alt="Image"
+                        style="filter: brightness(70%);">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="d-flex justify-content-lg-center mb-1">
                                 <div class="col-lg-6">
-                                    <h1 id= "titleslide" class="display-1 mb-4 animated slideInDown" style="color:white;">&nbsp;Pantai 3
+                                    <h1 id="titleslide" class="display-1 mb-4 animated slideInDown" style="color:white;">
+                                        &nbsp;Pantai 3
                                         Warna</h1>
                                 </div>
                             </div>
@@ -32,12 +36,14 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="{{ asset('user_template/img/carousel-empat.jpg') }}" alt="Image" style="filter: brightness(70%);">
+                    <img class="w-100" src="{{ asset('user_template/img/carousel-empat.jpg') }}" alt="Image"
+                        style="filter: brightness(70%);">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="d-flex justify-content-center mb-1">
                                 <div class="col-lg-6">
-                                    <h1 id= "titleslide" class="display-1 mb-4 animated slideInDown"style="color:white;">&nbsp;Pantai 3
+                                    <h1 id="titleslide" class="display-1 mb-4 animated slideInDown"style="color:white;">
+                                        &nbsp;Pantai 3
                                         Warna</h1>
                                 </div>
                             </div>
@@ -46,13 +52,13 @@
                 </div>
             </div>
             <!-- <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button> -->
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button> -->
         </div>
     </div>
 @endsection
@@ -62,7 +68,9 @@
         <div class="container">
             <div class="row g-4 align-items-end mb-4">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid rounded" src="{{ asset('user_template/img/aboutus.jpg') }}">
+                    <img class="img-fluid rounded"
+                        style="box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;"
+                        src="{{ asset('user_template/img/aboutus.jpg') }}">
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
                     <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Tentang kami</p>
@@ -108,7 +116,8 @@
                                 <p>
                                     Pantai Tiga Warna terletak di Kecamatan Sumber Manjing Wetan, Kabupaten
                                     Malang, Jawa Timur. Pantai ini memiliki gradasi yang terdiri dari tiga warna, yaitu
-                                    Warna biru pada bagian terdalam, hijau pada bagian terdangkal, dan cokelat kemerahan pada pasir pantai. 
+                                    Warna biru pada bagian terdalam, hijau pada bagian terdangkal, dan cokelat kemerahan
+                                    pada pasir pantai.
                                 </p>
                                 <p>Harga tiket masuk Pantai 3 Warna adalah Rp 10 ribu per orang. Pengunjung diwajibkan
                                     menyewa pemandu wisata sebesar Rp 100 ribu untuk setiap rombongan yang berjumlah 10
@@ -152,7 +161,8 @@
                         <div class="col-md-6">
                             <div class="row g-4">
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                                    <div class="feature-box border rounded p-4">
+                                    <div class="feature-box border rounded p-4"
+                                        style="box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;">
                                         <i class="fa fa-check fa-3x text-primary mb-3"></i>
                                         <h4 class="mb-3">Efisiensi</h4>
                                         <p class="mb-3">Meningkatkan efisiensi dalam proses pemesanan tiket, dengan
@@ -161,7 +171,8 @@
                                     </div>
                                 </div>
                                 <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                                    <div class="feature-box border rounded p-4">
+                                    <div class="feature-box border rounded p-4"
+                                        style="box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;">
                                         <i class="fa fa-check fa-3x text-primary mb-3"></i>
                                         <h4 class="mb-3">Jangkauan</h4>
                                         <p class="mb-3">Memperluas jangkauan pasar, dengan menyediakan layanan pemesanan
@@ -172,7 +183,8 @@
                             </div>
                         </div>
                         <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
-                            <div class="feature-box border rounded p-4">
+                            <div class="feature-box border rounded p-4"
+                                style="box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;">
                                 <i class="fa fa-check fa-3x text-primary mb-3"></i>
                                 <h4 class="mb-3">Biaya</h4>
                                 <p class="mb-3">Mengurangi biaya operasional dengan mengurangi waktu yang diperlukan
@@ -225,7 +237,8 @@
                                     <p><i class="fa fa-check text-primary me-3"></i>Anti Ribet</p>
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp" style="display:flex; align-items:center;">
-                                    <img class="img-fluid rounded" style="float:right;" src="{{ asset('user_template/img/3warna.jpeg') }}" style="margin-left: 10px;">
+                                    <img class="img-fluid rounded" style="float:right;"
+                                        src="{{ asset('user_template/img/3warna.jpeg') }}" style="margin-left: 10px;">
                                 </div>
                             </div>
                         </div>
@@ -242,7 +255,8 @@
                                     <p><i class="fa fa-check text-primary me-3"></i>Anti Ribet</p>
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp" style="display:flex; align-items:center;">
-                                    <img class="img-fluid rounded" style="float:right;" src="{{ asset('user_template/img/snorkling.jpeg') }}" style="margin-left: 10px;">
+                                    <img class="img-fluid rounded" style="float:right;"
+                                        src="{{ asset('user_template/img/snorkling.jpeg') }}" style="margin-left: 10px;">
                                 </div>
                             </div>
                         </div>
@@ -259,7 +273,8 @@
                                     <p><i class="fa fa-check text-primary me-3"></i>Anti Ribet</p>
                                 </div>
                                 <div class="col-lg-6 wow fadeInUp" style="display:flex; align-items:center;">
-                                    <img class="img-fluid rounded" style="float:right;" src="{{ asset('user_template/img/coral.jpeg') }}" style="margin-left: 10px;">
+                                    <img class="img-fluid rounded" style="float:right;"
+                                        src="{{ asset('user_template/img/coral.jpeg') }}" style="margin-left: 10px;">
                                 </div>
                             </div>
                         </div>
