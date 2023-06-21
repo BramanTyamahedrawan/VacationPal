@@ -44,7 +44,7 @@
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($userTiket->status != 'Dibatalkan')
+                                        @if ($userTiket->status != 'Dibatalkan' && $userTiket->status != 'Lunas')
                                             <form action="{{ route('batal') }}" method="GET">
                                                 @csrf
                                                 <input type="hidden" name="tiket_id" value="{{ $userTiket->id }}">
