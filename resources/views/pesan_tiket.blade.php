@@ -52,8 +52,6 @@
                                                                 id="exampleInputEmail3" placeholder="Email" name="email"
                                                                 value="{{ Auth::user()->email }}" readonly>
                                                         @endif
-                                                        {{-- <input type="email" class="form-control" id="exampleInputEmail3"
-                                                            placeholder="Email" name="email"> --}}
                                                     </div>
                                                     <div class="form-group">
                                                         <label>Jenis Kelamin</label>
@@ -102,13 +100,6 @@
                     </div>
                 </div>
             </div>
-            <script>
-                function sum() {
-                    var jumlah_tiket = document.getElementById('jml_tiket').value;
-                    var harga = jumlah_tiket * 10000;
-                    if (!isNaN(harga)) {
-                        document.getElementById('harga').value = harga;
-                    }
-                }
-            </script>
-        @endsection
+        </div>
+    </div>
+@endsection

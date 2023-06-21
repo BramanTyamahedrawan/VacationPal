@@ -135,48 +135,52 @@
 @endsection
 
 @section('deskripsi')
-<div class="container-xxl feature py-5">
-    <div class="container">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Tentang VacationPal</p>
-                <h1 class="display-5 mb-4">VacationPal</h1>
-                <p class="mb-4">VacationPal bertujuan untuk memudahkan
-                    pelanggan dalam melakukan pemesanan tiket secara online, sehingga pelanggan tidak
-                    perlu lagi antri di loket tiket atau menghubungi call center
-                </p>
-                <a class="btn btn-primary py-3 px-5" href="{{ route('pesan_tiket') }}">Pesan Tiket</a>
-            </div>
-            <div class="col-lg-6">
-                <div class="row g-4 align-items-center">
-                    <div class="col-md-6">
-                        <div class="row g-4">
-                            <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
-                                <div class="feature-box border rounded p-4">
-                                    <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                                    <h4 class="mb-3">Efisiensi</h4>
-                                    <p class="mb-3">Meningkatkan efisiensi dalam proses pemesanan tiket, dengan
-                                        memberikan
-                                        kemudahan dan kenyamanan bagi pengguna untuk memesan tiket secara online</p>
+    <div class="container-xxl feature py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Tentang VacationPal</p>
+                    <h1 class="display-5 mb-4">VacationPal</h1>
+                    <p class="mb-4">VacationPal bertujuan untuk memudahkan
+                        pelanggan dalam melakukan pemesanan tiket secara online, sehingga pelanggan tidak
+                        perlu lagi antri di loket tiket atau menghubungi call center
+                    </p>
+                    <a class="btn btn-primary py-3 px-5" href="{{ route('pesan_tiket') }}">Pesan Tiket</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="feature-box border rounded p-4"
+                                        style="box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;">
+                                        <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                                        <h4 class="mb-3">Efisiensi</h4>
+                                        <p class="mb-3">Meningkatkan efisiensi dalam proses pemesanan tiket, dengan
+                                            memberikan
+                                            kemudahan dan kenyamanan bagi pengguna untuk memesan tiket secara online</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
-                                <div class="feature-box border rounded p-4">
-                                    <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                                    <h4 class="mb-3">Jangkauan</h4>
-                                    <p class="mb-3">Memperluas jangkauan pasar, dengan menyediakan layanan pemesanan
-                                        tiket
-                                        yang dapat diakses oleh orang-orang dari berbagai daerah dan negara.</p>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="feature-box border rounded p-4"
+                                        style="box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;">
+                                        <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                                        <h4 class="mb-3">Jangkauan</h4>
+                                        <p class="mb-3">Memperluas jangkauan pasar, dengan menyediakan layanan pemesanan
+                                            tiket
+                                            yang dapat diakses oleh orang-orang dari berbagai daerah dan negara.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
-                        <div class="feature-box border rounded p-4">
-                            <i class="fa fa-check fa-3x text-primary mb-3"></i>
-                            <h4 class="mb-3">Biaya</h4>
-                            <p class="mb-3">Mengurangi biaya operasional dengan mengurangi waktu yang diperlukan
-                                untuk mengelola pemesanan tiket secara manual.</p>
+                        <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                            <div class="feature-box border rounded p-4"
+                                style="box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;">
+                                <i class="fa fa-check fa-3x text-primary mb-3"></i>
+                                <h4 class="mb-3">Biaya</h4>
+                                <p class="mb-3">Mengurangi biaya operasional dengan mengurangi waktu yang diperlukan
+                                    untuk mengelola pemesanan tiket secara manual.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
